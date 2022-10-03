@@ -26,3 +26,9 @@
 * *0.5 hours* Reading research
 * *0.5 hours* Preparing for first meeting with supervisor (pre-meeting discussion points in *meetings.md*)
 * *0.5 hours* First intro meeting with supervisor
+
+## Week 3
+
+### 3 Oct 2022
+
+* *0.5 hours* Writing Friday meeting minutes, creating Trello board
