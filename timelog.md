@@ -32,3 +32,7 @@
 ### 3 Oct 2022
 
 * *0.5 hours* Writing Friday meeting minutes, creating Trello board
+
+### 4 Oct 2022
+
+* *1 hour* Researching website- and topic-specific datasets
