@@ -36,3 +36,8 @@
 ### 4 Oct 2022
 
 * *1 hour* Researching website- and topic-specific datasets
+* *1 hour* Looking into general datasets for tutorial and choosing best tutorial
+
+### 6 Oct 2022
+
+* *1.5 hours* Following fake detection tutorial to better understand BERT, writing weekly work done
