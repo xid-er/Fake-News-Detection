@@ -19,3 +19,14 @@ Discussion results:
 * * The tool should be something more or less accessible to non-techy users, i.e., not a command-line interface, but a simple Django web app (to-do: research possibly more accessible tool - browser extension)
 * Trello board is made and shared (to-do: link it in email)
 * Most immediate task: research datasets to find topic-specific and website-specific ones
+
+
+## 7 Oct 2022
+
+Discussion points in meeting:
+* Discussed what sort of datasets to start with:
+* * Twitter vs. Facebook: each has their benefits and drawbacks, but decided to use Twitter dataset because post lengths are more uniform, which will make it easier/more trustworthy to work with the dataset
+* * Size of the dataset: start with smaller Twitter dataset with binary truth classification to make the work faster at first; afterwards, possible to sample larger dataset of sample sizes equal to smaller dataset to compare results: maybe the difference won't be that dramatic. Additionally, possible to take extreme ends of the n-ary truth classification of the larger dataset or to group them to convert to a binary classification.
+* Discussed accessibility of the tool (Django website vs. browser extension): decided to continue with the Django website idea because many non-techy Internet users don't even know about the existence of browser extensions, and they are the ones who need the tool the most
+* Found the emails that we thought were lost in the vast desert of email-verse
+* Most immediate task: create a model using the small Twitter dataset

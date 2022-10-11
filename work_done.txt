@@ -3,7 +3,11 @@ Week 3: 03/10/22 - 06/10/22
 Created and shared Trello board to manage tasks.
 Found a climate change-focused dataset with ternary classification: Supports, Not Enough Info, Refutes.
 Found a set of Facebook- and Twitter-only datasets, wanted to discuss in meeting which one is more appropriate.
-* Credbank: Twitter, ~60 million posts, 5 levels of truth
-* PHEME: Twitter, 330 posts, binary classification (true/fake)
+* Credbank: Twitter, ~60 million posts, 5 levels of truth  (less trustworthy)
+* PHEME: Twitter, 330 posts, binary classification (true/fake) ---- (same-length posts)
 * BuzzFace: Facebook, 2263 posts, 4 levels of truth
 Researched tutorials to follow for classification; one is training overnight, but seems like the model environment will take the least time for the project, which allows for focusing on more novel parts, like emoji-translation (not yet researched) and the end-user tool (Django website/Browser extension (NB: to discuss) analysing Twitter/Facebook/Text).
+
+work with datasets
+split bigger dataset
+randomly sample from bigger dataset, compare 300

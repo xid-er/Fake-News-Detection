@@ -41,3 +41,14 @@
 ### 6 Oct 2022
 
 * *1.5 hours* Following fake detection tutorial to better understand BERT, writing weekly work done
+
+## Week 4
+
+### 10 Oct 2022
+
+* *2 hours* Exploring and understanding Twitter PHEME dataset
+
+### 11 Oct 2022
+
+* *0.5 hours* Importing dataset to Python
+* *0.5 hours* Writing meeting minutes

@@ -130,3 +130,6 @@ dmypy.json
 
 # VSCode files
 .vscode/
+
+# Dataset
+src/data/
