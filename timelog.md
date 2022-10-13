@@ -52,3 +52,11 @@
 
 * *0.5 hours* Importing dataset to Python
 * *0.5 hours* Writing meeting minutes
+
+### 12 Oct 2022
+
+* *1.5 hours* Experimenting with Linear Regression, SVC, and Dummy models
+
+### 13 Oct 2022
+
+* *0.5 hours* Writing weekly work done, concluding first impressions

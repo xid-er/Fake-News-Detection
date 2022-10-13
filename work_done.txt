@@ -8,6 +8,14 @@ Found a set of Facebook- and Twitter-only datasets, wanted to discuss in meeting
 * BuzzFace: Facebook, 2263 posts, 4 levels of truth
 Researched tutorials to follow for classification; one is training overnight, but seems like the model environment will take the least time for the project, which allows for focusing on more novel parts, like emoji-translation (not yet researched) and the end-user tool (Django website/Browser extension (NB: to discuss) analysing Twitter/Facebook/Text).
 
-work with datasets
-split bigger dataset
-randomly sample from bigger dataset, compare 300
+
+Week 4: 10/10/22 - 13/10/22
+
+Analysed the smaller Twitter dataset much further by reading the connected article (https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0150989) and after (much difficulty with) importing the dataset into a Python data structure.
+Vectorised dataset with TF-IDF vectoriser.
+Created 3 ML classifier models with the dataset and compared their results:
+* Dummy Classifier with the most-frequent strategy: weighted f1-score - 22.9%
+* SVM/SVC Classifier: weighted f1-score - 58.9%
+* Logistic Regression Classifier: weighted f1-score - 61.2%
+
+Reminder that the code is in the repo: https://github.com/xid-er/Fake-News-Detection
