@@ -12,6 +12,7 @@ Researched tutorials to follow for classification; one is training overnight, bu
 Week 4: 10/10/22 - 13/10/22
 
 Analysed the smaller Twitter dataset much further by reading the connected article (https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0150989) and after (much difficulty with) importing the dataset into a Python data structure.
+TODO: tokenise data.
 Vectorised dataset with TF-IDF vectoriser.
 Created 3 ML classifier models with the dataset and compared their results:
 * Dummy Classifier with the most-frequent strategy: weighted f1-score - 22.9%

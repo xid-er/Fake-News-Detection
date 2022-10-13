@@ -30,3 +30,11 @@ Discussion points in meeting:
 * Discussed accessibility of the tool (Django website vs. browser extension): decided to continue with the Django website idea because many non-techy Internet users don't even know about the existence of browser extensions, and they are the ones who need the tool the most
 * Found the emails that we thought were lost in the vast desert of email-verse
 * Most immediate task: create a model using the small Twitter dataset
+
+
+## 14 Oct 2022
+
+Before meeting:
+* Any advice on tokenisation considerations?
+* How to host the website/REST API?
+* Thoughts on initial performance of models before tokenisation & fine-tuning / using BERT and more advanced models?
