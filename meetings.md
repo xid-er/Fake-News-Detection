@@ -36,5 +36,14 @@ Discussion points in meeting:
 
 Before meeting:
 * Any advice on tokenisation considerations?
+* * Try many methods, compare and see which ones are most useful
+* * Speed vs f1-score/accuracy
 * How to host the website/REST API?
+* * Free online sources: Python Anywhere
 * Thoughts on initial performance of models before tokenisation & fine-tuning / using BERT and more advanced models?
+
+Meeting notes:
+* Discussed results of the performance by models made and trained during the week: good results for a start, especially for comparison with a Dummy Classifier. Naturally, more work to be done to improve these results by fine-tuning, tokenisation, and using better models and bigger datasets.
+* Regarding the end-tool, might be useful to let the user choose what kind of model to use to predict the truth of the text they input
+* Ideally, final model will use a much bigger dataset and a more complex model like BERT, which is much more suitable for NLP
+* Immediate tasks: look into tokenisation, start with the bigger dataset first, then try and integrate BERT.

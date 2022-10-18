@@ -42,6 +42,10 @@
 
 * *1.5 hours* Following fake detection tutorial to better understand BERT, writing weekly work done
 
+### 7 Oct 2022
+
+* *0.5 hours* Supervisor meeting
+
 ## Week 4
 
 ### 10 Oct 2022
@@ -60,3 +64,13 @@
 ### 13 Oct 2022
 
 * *0.5 hours* Writing weekly work done, concluding first impressions
+
+### 14 Oct 2022
+
+* *0.5 hours* Supervisor meeting
+
+## Week 5
+
+### 18 Oct 2022
+
+* *0.5 hours* Writing meeting minutes
