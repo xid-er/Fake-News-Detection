@@ -74,3 +74,14 @@
 ### 18 Oct 2022
 
 * *0.5 hours* Writing meeting minutes
+* *0.5 hours* Exploring BERT model and emoji tokenisation
+
+### 19 Oct 2022
+
+*0.5 hours* Experimenting with emoji tokenisation
+*0.5 hours* Looking into using BERT (tutorial found!)
+*1 hour* Finishing BERT and going through data cleaning/tokenisation tutorials
+
+### 21 Oct 2022
+
+*0.5 hours* Writing work done

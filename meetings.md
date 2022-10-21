@@ -47,3 +47,8 @@ Meeting notes:
 * Regarding the end-tool, might be useful to let the user choose what kind of model to use to predict the truth of the text they input
 * Ideally, final model will use a much bigger dataset and a more complex model like BERT, which is much more suitable for NLP
 * Immediate tasks: look into tokenisation, start with the bigger dataset first, then try and integrate BERT.
+
+
+## 21 Oct 2022
+
+Before meeting:

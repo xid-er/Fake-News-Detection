@@ -20,3 +20,10 @@ Created 3 ML classifier models with the dataset and compared their results:
 * Logistic Regression Classifier: weighted f1-score - 61.2%
 
 Reminder that the code is in the repo: https://github.com/xid-er/Fake-News-Detection
+
+
+Week 5: 17/10/22 - 21/10/22
+
+Experimented with emoji tokenisation and found that performance for all models was worse: there aren't any emojis in the 300-post dataset, and maybe the imported tokeniser is not as good as the in-built one
+Researched how to use BERT to prepare the data: fully integrated into the code, but the performance was slightly worse than Logistic Regression before. I even used the full BERT instead of the light version - distilBERT. How come?
+Improved dataset cleaning according to tutorials (this might be the reason BERT did worse - information lost?)
