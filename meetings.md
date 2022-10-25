@@ -52,3 +52,12 @@ Meeting notes:
 ## 21 Oct 2022
 
 Before meeting:
+* How come BERT is worse? Haven't looked into it yet
+* Next task: Look into using the bigger dataset
+
+Meeting notes:
+* When reporting results, take mean of multiple runs
+* * Also when comparing models (but keep split of train-test consistent)
+* Look into splitting bigger dataset by topic, start with topic-specific models (possible approach: filter by mentioned keywords, like "climate change", etc)
+* Investigate emojis and how they could disguise fake news (could (preferable to) replace with written meaning to use in the model)
+* Instead of following gut feelings, test different approaches (features like author (weighted less than text?), date & time (don't forget about timezones), location, etc)

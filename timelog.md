@@ -85,3 +85,9 @@
 ### 21 Oct 2022
 
 *0.5 hours* Writing work done
+
+## Week 6
+
+### 25 Oct 2022
+
+* *2 hours* Importing bigger Twitter dataset (not finished yet)
