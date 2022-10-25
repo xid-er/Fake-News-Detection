@@ -61,3 +61,4 @@ Meeting notes:
 * Look into splitting bigger dataset by topic, start with topic-specific models (possible approach: filter by mentioned keywords, like "climate change", etc)
 * Investigate emojis and how they could disguise fake news (could (preferable to) replace with written meaning to use in the model)
 * Instead of following gut feelings, test different approaches (features like author (weighted less than text?), date & time (don't forget about timezones), location, etc)
+* Immediate task: import bigger Twitter dataset, try to filter it by topic, apply BERT to it

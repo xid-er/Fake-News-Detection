@@ -78,16 +78,19 @@
 
 ### 19 Oct 2022
 
-*0.5 hours* Experimenting with emoji tokenisation
-*0.5 hours* Looking into using BERT (tutorial found!)
-*1 hour* Finishing BERT and going through data cleaning/tokenisation tutorials
+* *0.5 hours* Experimenting with emoji tokenisation
+* *0.5 hours* Looking into using BERT (tutorial found!)
+* *1 hour* Finishing BERT and going through data cleaning/tokenisation tutorials
 
 ### 21 Oct 2022
 
-*0.5 hours* Writing work done
+* *0.5 hours* Writing work done
+* *0.5 hours* Supervisor meeting
 
 ## Week 6
 
 ### 25 Oct 2022
 
 * *2 hours* Importing bigger Twitter dataset (not finished yet)
+* *1 hour* Finished importing tweet IDs from dataset, researching Twitter API
+* *1.5 hours* Researching Twitter API and applying for Elevated Access
