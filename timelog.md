@@ -94,3 +94,7 @@
 * *2 hours* Importing bigger Twitter dataset (not finished yet)
 * *1 hour* Finished importing tweet IDs from dataset, researching Twitter API
 * *1.5 hours* Researching Twitter API and applying for Elevated Access
+
+### 27 Oct 2022
+
+* *0.5 hours* Writing work done, pre-meeting questions
