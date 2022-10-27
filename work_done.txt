@@ -27,3 +27,16 @@ Week 5: 17/10/22 - 21/10/22
 Experimented with emoji tokenisation and found that performance for all models was worse: there aren't any emojis in the 300-post dataset, and maybe the imported tokeniser is not as good as the in-built one
 Researched how to use BERT to prepare the data: fully integrated into the code, but the performance was slightly worse than Logistic Regression before. I even used the full BERT instead of the light version - distilBERT. How come?
 Improved dataset cleaning according to tutorials (this might be the reason BERT did worse - information lost?)
+
+
+Week 6: 24/10/22 - 27/10/22
+
+• Started researching and importing the largest Twitter dataset (60 million posts), but realised that with AWS I'd have to pay to access that many posts and I did not want to associate my debit card with the project. Which is why I:
+• Researched for alternative Twitter datasets that would have enough posts as well
+• Found a dataset with about 600K politics-focused posts (as well as many celebrity-focused posts)
+    • The only drawback is that all of the posts are connected to news sources by links, but this can either be removed or included as part of the dissertation problem
+    • Have imported the Tweet IDs from the dataset (which was surprisingly difficult)
+• By researching more about Twitter datasets, I've found that it's against Twitter's Terms of Service to  share datasets with any of the features of the tweets, so the dataset includes only the IDs
+• Researched Twitter API and applied for Elevated Access to be able to query for up to 2 million posts per month (without it would be up to 500K, which is not the full extent of the dataset)
+    • With this API, I found out I can extract extremely useful features for the model on top of the text (creation date and time, user location, user follower count, friend count, user description, and verification status)
+• Have since acquired Elevated Access
