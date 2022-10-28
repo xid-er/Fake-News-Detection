@@ -62,3 +62,11 @@ Meeting notes:
 * Investigate emojis and how they could disguise fake news (could (preferable to) replace with written meaning to use in the model)
 * Instead of following gut feelings, test different approaches (features like author (weighted less than text?), date & time (don't forget about timezones), location, etc)
 * Immediate task: import bigger Twitter dataset, try to filter it by topic, apply BERT to it
+
+
+## 28 Oct 2022
+
+Before meeting:
+* Is the article-focused dataset okay?
+* What to do with links?
+* Include gossip cop or not?
