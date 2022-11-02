@@ -98,3 +98,15 @@
 ### 27 Oct 2022
 
 * *0.5 hours* Writing work done, pre-meeting questions
+* *0.5 hours* Supervisor meeting
+
+
+## Week 7
+
+### 1 Nov 2022
+
+* *0.5 hours* Analysing Tweets (and features) got from Twitter API
+
+### 2 Nov 2022
+
+* *1 hour* Researching Twitter API to make 60+ hour query faster

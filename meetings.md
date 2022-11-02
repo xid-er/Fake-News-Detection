@@ -70,3 +70,16 @@ Before meeting:
 * Is the article-focused dataset okay?
 * What to do with links?
 * Include gossip cop or not?
+
+Meeting notes:
+* A lot of work done on the datasets, and that is completely expected and understandable (on average, 60% of work goes into dataset analysis)
+* Regarding the two sources of data in dataset: use PolitiFact (politics-focused posts) first, then try Gossip Cop (celebrity-focused posts) only, then combine in a single model
+* Regarding the presence of a (shortened) link to a news article in every Tweet in the dataset: Try removing the link first, but it might be important to include it as a point of data. Basically, experiment with both.
+* Regarding the problem with representation of real and fake posts: real posts are almost 3x as many as fake ones. Solution: filter real posts by a weight according to how many fake posts there are. Other alternatives: duplicate the fake ones randomly to have more of them; or train the model with weights that represent the unequal proportion.
+* Most immediate task: fetch and store Twitter data, apply BERT and Logistic Regression if there's time
+
+
+## 4 Nov 2022
+
+Before meeting:
+* How to avoid/reduce bias against people (political ideology, race, etc.) arising from features (user location, description, etc.)?
