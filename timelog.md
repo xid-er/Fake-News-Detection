@@ -110,3 +110,8 @@
 ### 2 Nov 2022
 
 * *1 hour* Researching Twitter API to make 60+ hour query faster
+
+### 3 Nov 2022
+
+* *0.5 hours* Still optimising Twitter API
+* *0.5 hours* Finished optimising, started running fake news tweet fetching

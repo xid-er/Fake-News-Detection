@@ -83,3 +83,4 @@ Meeting notes:
 
 Before meeting:
 * How to avoid/reduce bias against people (political ideology, race, etc.) arising from features (user location, description, etc.)?
+* General dissertation discussion points (if applicable to supervisor): literature review, talking about bias, **research question**?

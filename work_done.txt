@@ -40,3 +40,13 @@ Week 6: 24/10/22 - 27/10/22
 • Researched Twitter API and applied for Elevated Access to be able to query for up to 2 million posts per month (without it would be up to 500K, which is not the full extent of the dataset)
     • With this API, I found out I can extract extremely useful features for the model on top of the text (creation date and time, user location, user follower count, friend count, user description, and verification status)
 • Have since acquired Elevated Access
+
+Week 7: 31/10/22 - 03/11/22
+
+Developed an initial way to acquire the aforementioned features from Tweets with the use of Twitter API
+With the realisation that this query would take 60+ hours for the full 600K Tweets, spent most of the time searching for another way to query Twitter with a different API, which I finished on Thurday
+Experimented with the first 200 hundred fake news Tweet IDs, initial results:
+* Only 60 out of those 200 were still on Twitter as the other Tweets' authors' accounts had been suspended/deleted (theory: this will be more prevalent in fake news Tweets than real news Tweets)
+* Seeing the user description and location has made me realise that this model could be seriously biased against people based on their political and religious beliefs and other factors (example description of a fake Tweet: "Patriotic Republican, son of Phila. PA Police Officer, Christian, Trump supporter.  #MAGA #TRUMP2020 #KAG"). Any initial research into how to avoid discrimination or discussion around it?
+Running the script overnight to get all 420K real news Tweets (170K fake news Tweets took about an hour)
+Attended a dissertation-writing advice class, have some questions about it (if applicable)
