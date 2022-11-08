@@ -84,3 +84,12 @@ Meeting notes:
 Before meeting:
 * How to avoid/reduce bias against people (political ideology, race, etc.) arising from features (user location, description, etc.)?
 * General dissertation discussion points (if applicable to supervisor): literature review, talking about bias, **research question**?
+
+Meeting notes:
+* If models take too long on laptop, building models with university-owned GPUs on stlinux-11 and stlinux-12 is possible. I'll start with laptop first, then try Google Colab, and if both are too slow, I'll let you know about the need for the university-owned servers.
+* Good to start with limited number of real news Tweets (big enough number, similar representation to fake Tweets)
+* Leave in the user descriptions as features because they are very useful pieces of information; regarding location, try with and without
+* Narrowing dissertation research question to Twitter specifically (motivation: similar input text length, accessible API)
+* It is alright to talk about bias and discuss possibilities to mitigate it, also talk about dataset makers and my own bias
+* Lit review: summarise, read low double-figure amount fully, skim-read unimportant ones
+* Immediate task: build model with dataset with one feature (text) (BERT-processed), then add more features (as mentioned)
