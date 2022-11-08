@@ -115,3 +115,13 @@
 
 * *0.5 hours* Still optimising Twitter API
 * *0.5 hours* Finished optimising, started running fake news tweet fetching
+
+### 4 Nov 2022
+
+* *1 hour* Supervisor meeting and writing meeting minutes
+
+## Week 8
+
+### 7 Nov 2022
+
+* *2 hours* Trying to apply BERT to 220K dataset, ran out of memory
