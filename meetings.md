@@ -93,3 +93,10 @@ Meeting notes:
 * It is alright to talk about bias and discuss possibilities to mitigate it, also talk about dataset makers and my own bias
 * Lit review: summarise, read low double-figure amount fully, skim-read unimportant ones
 * Immediate task: build model with dataset with one feature (text) (BERT-processed), then add more features (as mentioned)
+
+
+## 14 Nov 2022
+
+Before meeting:
+* How to explain the incredible results?
+* Can I start working on the Django website, or should I improve the model to include other features?

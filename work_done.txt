@@ -41,6 +41,7 @@ Week 6: 24/10/22 - 27/10/22
     • With this API, I found out I can extract extremely useful features for the model on top of the text (creation date and time, user location, user follower count, friend count, user description, and verification status)
 • Have since acquired Elevated Access
 
+
 Week 7: 31/10/22 - 03/11/22
 
 Developed an initial way to acquire the aforementioned features from Tweets with the use of Twitter API
@@ -50,3 +51,16 @@ Experimented with the first 200 hundred fake news Tweet IDs, initial results:
 * Seeing the user description and location has made me realise that this model could be seriously biased against people based on their political and religious beliefs and other factors (example description of a fake Tweet: "Patriotic Republican, son of Phila. PA Police Officer, Christian, Trump supporter.  #MAGA #TRUMP2020 #KAG"). Any initial research into how to avoid discrimination or discussion around it?
 Running the script overnight to get all 420K real news Tweets (170K fake news Tweets took about an hour)
 Attended a dissertation-writing advice class, have some questions about it (if applicable)
+
+
+Week 8: 07/11/22 - 13/11/22
+
+Experimented with the application of BERT to the bigger but limited (200K Tweet) dataset, but failed because it takes up too much memory to apply to the whole dataset at once. To-do: find out how to sequentially apply BERT to dataset in batches.
+
+Decided to run the same set of simple models on TF-IDF'd data (just the text of the Tweet for now) (took about an hour and a half), and got very confusing results because they are TOO good:
+Dummy most frequent: 52.0% (a dummy model getting 50% verifies that the dataset isn't too over-representative in either direction)
+Logistic Regression: 97.6%
+SVC: 98.0%
+I investigated the dataset to see why these metrics were literally incredible, and I've come up with a theory: because lots of these tweets contain exactly the same words (copy-pasted title of the linked article), they're easily associated with real/fake news, and a repeated Tweet in the testing data (even if it has different other characteristics) would have already been encountered in the training data. However, is the believable metric of the Dummy model maybe proof that this isn't the case?
+
+Finally, I finished running the Twitter API fetching script for real news to have full coverage of the dataset, getting 179K additional real news Tweets (on top of the ~120K first-got real news Tweets)

@@ -125,3 +125,15 @@
 ### 7 Nov 2022
 
 * *2 hours* Trying to apply BERT to 220K dataset, ran out of memory
+
+### 10 Nov 2022
+
+* *2 hours* Applying simple Logistic Regression to TF-IDF-vectorised new dataset, saving results
+
+### 12 Nov 2022
+
+* *1 hour* Upkeep, noting down results, writing code to get the rest of real Tweets
+
+### 13 Nov 2022
+
+* *0.5 hours* Writing work done, pre-meeting questions

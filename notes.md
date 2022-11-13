@@ -13,3 +13,10 @@ I plan to extract specific features from tweets in the fake and real news-annota
 ### Please describe how and where Tweets and/or data about Twitter content will be displayed outside of Twitter.
 
 The information about these tweets will be aggregated into the dataset analysis section of my dissertation, which may or may not be published in the end. The same data mentioned above will be analysed, but any usernames or other types of sensitive information will be removed from publication.
+
+
+## Accuracy of new 200 Tweet-dataset (FakeNewsNet) by model
+
+Dummy most frequent: 52.0%
+Logistic Regression: 97.6%
+SVC: 98.0%
