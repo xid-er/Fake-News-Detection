@@ -100,3 +100,9 @@ Meeting notes:
 Before meeting:
 * How to explain the incredible results?
 * Can I start working on the Django website, or should I improve the model to include other features?
+
+Notes:
+* In order to fix the literally incredible results, group Tweets by article (dataset is already ordered by article) and randomly put into train/test sets until the Tweets are roughly 50/50. Additionally, implement the previously discussed method (weighted filtering) to make real Tweets less representative (to equal the representation of fake Tweets).
+* In order to improve performance, research CUDA and look into how to use it on the laptop to utilise the GPU. If it takes too much time setting up, use Google Colab or university servers.
+* Regarding general focus, have believable/trustworthy results first (80-90%), then focus more on the software development part of it.
+* Immediate task: first bullet point (to not have the same article in both sets)

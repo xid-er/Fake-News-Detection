@@ -137,3 +137,10 @@
 ### 13 Nov 2022
 
 * *0.5 hours* Writing work done, pre-meeting questions
+
+
+## Week 9
+
+### 14 Nov 2022
+
+* *1 hour* Supervisor meeting and writing meeting minutes
