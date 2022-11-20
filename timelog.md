@@ -144,3 +144,7 @@
 ### 14 Nov 2022
 
 * *1 hour* Supervisor meeting and writing meeting minutes
+
+### 20 Nov 2022
+
+* *10:40 - 
