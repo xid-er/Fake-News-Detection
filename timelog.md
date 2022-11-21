@@ -147,4 +147,6 @@
 
 ### 20 Nov 2022
 
-* *10:40 - 
+* *0.5 hours* Combining all dataset parts
+* *6 hours* Adding article IDs to Tweet IDs
+* *1 hour* Splitting database by group

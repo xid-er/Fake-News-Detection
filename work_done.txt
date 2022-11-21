@@ -64,3 +64,19 @@ SVC: 98.0%
 I investigated the dataset to see why these metrics were literally incredible, and I've come up with a theory: because lots of these tweets contain exactly the same words (copy-pasted title of the linked article), they're easily associated with real/fake news, and a repeated Tweet in the testing data (even if it has different other characteristics) would have already been encountered in the training data. However, is the believable metric of the Dummy model maybe proof that this isn't the case?
 
 Finally, I finished running the Twitter API fetching script for real news to have full coverage of the dataset, getting 179K additional real news Tweets (on top of the ~120K first-got real news Tweets)
+
+
+Week 9: 14/11/22 - 20/11/22
+
+Combined the earlier-fetched part of real news Tweets with the later-fetched, finally getting all 296K Tweets together.
+
+Spent 5-6 hours just adding news article IDs to each Tweet because 1) the dataset is arranged in a really weird way and 2) the dataset of Tweets is huge (405K Tweets). Findings: the articles are quite well balanced between real and fake: there are 395 unique real news articles and 384 fake ones.
+
+Managed to run the models during the night on just the text with the grouped Tweets not spreading across both training and testing data, and here are the results:
+Dummy Most-Frequent: 68.3% (possible reasons: still haven't solved the imbalanced data, so true news is about 2/3, but this is a to-do; most-frequent terms are a good indicator of fakeness/realness)
+SVC: 70.1%
+Logistic Regression: 71.7%
+
+These seem like much more believable results and there is much room for growth by introducing more features into the pipeline and doing a better job of balancing the classes.
+
+Also, I wanted to discuss with you whether the current situation with Twitter will affect my project at all.

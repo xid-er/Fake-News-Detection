@@ -106,3 +106,19 @@ Notes:
 * In order to improve performance, research CUDA and look into how to use it on the laptop to utilise the GPU. If it takes too much time setting up, use Google Colab or university servers.
 * Regarding general focus, have believable/trustworthy results first (80-90%), then focus more on the software development part of it.
 * Immediate task: first bullet point (to not have the same article in both sets)
+
+
+## 21 Nov 2022
+
+Before meeting:
+* Am I right in saying that these results (71%) are better than previous (98%) because they're more believable and there is room for much growth?
+* With Twitter possibly breaking down because of Musk, should I be relying on the API for the tool?
+* How okay is it to narrow down 
+
+Notes:
+* Twitter collapsing because of Musk and possibly ending the usefulness of the further use of the project - not the point of the project. The project is about the research and work that goes into developing the model(s) and the tool, so it's okay since the dataset is there.
+* The code of the project is open-source, so there are no problems with continuing in the future if I ever want.
+* Fix imbalanced data (easiest and most immediate to hardest): 1) get rid of random real Tweets (by actually just taking enough out to use) (don't get rid of whole articles), 2) generate fake ones with BERT (from the ones I've got), 3) GANs
+* For Twitter API possibly breaking, keep old model just in case as backup, but develop better model with more features to use alongside Twitter API in the tool. Talk about Twitter breaking 2FA in dissertation as a precedence for the concern of API failing.
+* In terms of increasing features used and thus narrowing the models down to be more Twitter-specific, it is okay to do so because that is the dataset I have and a big part of the project is the research of the dataset and how to include multiple features in a model.
+* Most immediate tasks: 1) fix imbalance (methods in order of ease), 2) apply BERT, 3) increase features used (username, user description, etc.)
