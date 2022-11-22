@@ -20,3 +20,15 @@ The information about these tweets will be aggregated into the dataset analysis 
 Dummy most frequent: 52.0%
 Logistic Regression: 97.6%
 SVC: 98.0%
+
+## Accuracy of FakeNewsNet by model after splitting by group
+
+Dummy Most-Frequent: 68.3% (+16.3%)
+Logistic Regression: 71.7% (-25.9%)
+SVC: 70.1% (-17.9%)
+
+## Accuracy of FakeNewsNet by model after fixing imbalance
+
+Dummy most frequent: 49.5% (-18.8%)
+Logistic Regression: 68.0% (-3.7%)
+SVC: 61.4% (-8.7%)

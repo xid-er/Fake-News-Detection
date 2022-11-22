@@ -150,3 +150,14 @@
 * *0.5 hours* Combining all dataset parts
 * *6 hours* Adding article IDs to Tweet IDs
 * *1 hour* Splitting database by group
+
+
+## Week 10
+
+### 21 Nov 2022
+
+* *0.5 hours* Supervisor meeting
+
+### 22 Nov 2022
+
+* *1 hour* Fixing imbalanced dataset with the easiest method first
