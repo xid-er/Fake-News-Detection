@@ -152,7 +152,7 @@
 * *1 hour* Splitting database by group
 
 
-## Week 10
+## Week 10 (week of the AEs)
 
 ### 21 Nov 2022
 
@@ -161,3 +161,7 @@
 ### 22 Nov 2022
 
 * *1 hour* Fixing imbalanced dataset with the easiest method first
+
+### 27 Nov 2022
+
+* *0.5 hours* Writing work done

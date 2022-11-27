@@ -80,3 +80,11 @@ Logistic Regression: 71.7%
 These seem like much more believable results and there is much room for growth by introducing more features into the pipeline and doing a better job of balancing the classes.
 
 Also, I wanted to discuss with you whether the current situation with Twitter will affect my project at all.
+
+
+Week 10: 21/11/22 - 27/11/22
+
+Fixed the imbalance in the dataset by randomly choosing as many real news tweets as there are fake news tweets. Here is the performance for the new models:
+Dummy most frequent: 49.5% (-18.8% since last time) (This 50/50 split is very promising for the seeming validity of the dataset)
+Logistic Regression: 68.0% (-3.7%) (surprisingly not much regression)
+SVC: 61.4% (-8.7%) (a much larger regression, but less than half of Dummy model's)
