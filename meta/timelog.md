@@ -181,3 +181,8 @@
 ### 13 Dec 2022
 
 * *1.5 hours* Writing Semester 1 report
+
+### 14 Dec 2022
+
+* *0.5 hours* Cleaning up files, transferring report timeline to Trello
+* *1 hour* Researching batch sizes for BERT, almost there! Input IDs!

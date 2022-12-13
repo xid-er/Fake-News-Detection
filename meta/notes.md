@@ -27,8 +27,8 @@ Dummy Most-Frequent: 68.3% (+16.3%)
 Logistic Regression: 71.7% (-25.9%)
 SVC: 70.1% (-17.9%)
 
-## Accuracy of FakeNewsNet by model after fixing imbalance
+## Accuracy [F1 Score] of FakeNewsNet by model after fixing imbalance
 
-Dummy most frequent: 49.5% (-18.8%)
-Logistic Regression: 68.0% (-3.7%)
-SVC: 61.4% (-8.7%)
+Dummy most frequent: 49.5% (-18.8%) \[32.7%]
+Logistic Regression: 68.0% (-3.7%) \[66.2%]
+SVC: 61.4% (-8.7%) \[56.8%]
