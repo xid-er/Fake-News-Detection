@@ -122,3 +122,10 @@ Notes:
 * For Twitter API possibly breaking, keep old model just in case as backup, but develop better model with more features to use alongside Twitter API in the tool. Talk about Twitter breaking 2FA in dissertation as a precedence for the concern of API failing.
 * In terms of increasing features used and thus narrowing the models down to be more Twitter-specific, it is okay to do so because that is the dataset I have and a big part of the project is the research of the dataset and how to include multiple features in a model.
 * Most immediate tasks: 1) fix imbalance (methods in order of ease), 2) apply BERT, 3) increase features used (username, user description, etc.)
+
+
+## 28 Nov 2022
+
+Notes:
+* Look into confusion matrices and how to fix their imbalance by, e.g., researching the cut-off point
+* Start doing BERT, keeping in mind skewed confusion matrices

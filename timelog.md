@@ -165,3 +165,19 @@
 ### 27 Nov 2022
 
 * *0.5 hours* Writing work done
+
+### 28 Nov 2022
+
+* *0.5 hours* Supervisor meeting
+
+
+## Week 11 (week of trip to Latvia)
+
+* *0 hours*
+
+
+## Week 12 (1st week in Malaysia)
+
+### 13 Dec 2022
+
+* *1.5 hours* Writing Semester 1 report
