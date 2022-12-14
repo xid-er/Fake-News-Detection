@@ -186,3 +186,4 @@
 
 * *0.5 hours* Cleaning up files, transferring report timeline to Trello
 * *1 hour* Researching batch sizes for BERT, almost there! Input IDs!
+* *2 hours* Setting up Django website
