@@ -17,8 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from apps.main import views
 
+from apps.endpoints.urls import urlpatterns as endpoints_urlpatterns
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
     path('main/', include('apps.main.urls'))
 ]
+
+urlpatterns += endpoints_urlpatterns
