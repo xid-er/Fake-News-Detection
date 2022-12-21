@@ -192,4 +192,9 @@
 
 ### 20 Dec 2022
 
-* *08:30 -* 
+* *0.5 hours* Adding Logistic Regression to server
+* *12:06 -12:18* 
+
+### 22 Dec 2022
+
+* *1 hour* Making website template, saving model

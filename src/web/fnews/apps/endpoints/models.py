@@ -39,14 +39,12 @@ class MLAlgorithmStatus(models.Model):
     The MLAlgorithmStatus represent status of the MLAlgorithm which can change during the time.
 
     Attributes:
-        status: The status of algorithm in the endpoint. Can be: testing, staging, production, ab_testing.
         active: The boolean flag which point to currently active status.
         created_by: The name of creator.
         created_at: The date of status creation.
         parent_mlalgorithm: The reference to corresponding MLAlgorithm.
 
     '''
-    status = models.CharField(max_length=128)
     active = models.BooleanField()
     created_by = models.CharField(max_length=128)
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
