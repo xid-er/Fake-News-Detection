@@ -9,6 +9,8 @@ router.register(r"mlalgorithms", MLAlgorithmViewSet, basename="mlalgorithms")
 router.register(r"mlalgorithmstatuses", MLAlgorithmStatusViewSet, basename="mlalgorithmstatuses")
 router.register(r"mlrequests", MLRequestViewSet, basename="mlrequests")
 
+app_name = "endpoints"
+
 urlpatterns = [
     re_path(r"^api/v1/", include(router.urls)),
     re_path(

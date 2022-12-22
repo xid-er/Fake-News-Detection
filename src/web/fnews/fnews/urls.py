@@ -23,7 +23,7 @@ from apps.endpoints.urls import urlpatterns as endpoints_urlpatterns
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main_views.index, name="index"),
-    path('result/', end_views.result, name='result'),
+    #path('result/', end_views.result, name='result'),
     path('main/', include('apps.main.urls'))
 ]
 
