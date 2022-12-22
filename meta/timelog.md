@@ -198,4 +198,8 @@
 ### 22 Dec 2022
 
 * *1 hour* Making website template, saving model
-* *08:15 - 
+* *1 hour* Improving website frontend
+
+### 23 Dec 2022
+
+*0.5 hours* Improving form in website

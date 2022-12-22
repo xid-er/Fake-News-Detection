@@ -13,12 +13,12 @@
         <form action="endpoints:predict">
           {% csrf_token %}
           <div class="form-group">
-            <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-outline-primary radio-inline"><input type="radio" name="optradio" checked>Simple (text-only) algorithm</label>
-              <label class="btn btn-outline-primary radio-inline disabled"><input type="radio" name="optradio" disabled>Feature-rich algorithm</label>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-outline-primary"><input type="radio" checked>Simple (text-only) algorithm</label>
+              <label class="btn btn-outline-primary disabled"><input type="radio" disabled>Feature-rich algorithm</label>
             </div>
             <p>Source text:</p>
-            <textarea class="form-control" type="text" name="src_text"></textarea>
+            <textarea class="form-control" type="text" name="src_text" placeholder="Paste the text of the Tweet here!"></textarea>
             <br>
     
             <button class="btn btn-primary form-control" type="submit" value='Make Prediction'>Predict!</button>

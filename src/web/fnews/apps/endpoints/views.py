@@ -1,4 +1,5 @@
 from django.db import transaction
+from django.shortcuts import render
 
 from rest_framework import viewsets, mixins
 from rest_framework.exceptions import APIException
@@ -83,6 +84,7 @@ class PredictView(views.APIView):
         #algorithm_object = registry.endpoints[algs[alg_index].id]
         #prediction = algorithm_object.predict(request.data)
 
+        # TODO: Save model & scaler in files
         model = pickle.load(open("easy_ml_model.sav", "rb"))
         scaler = pickle.load(open("scaler.sav", "rb"))
 
@@ -101,4 +103,4 @@ class PredictView(views.APIView):
 
         prediction["request_id"] = ml_request.id
 
-        return Response(prediction)
+        return render(request, 'endpoints:result.html', {'prediction':prediction})
