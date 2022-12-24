@@ -87,13 +87,19 @@ class PredictView(views.APIView):
 
         
         module_dir = os.path.dirname(__file__)  # get current directory
-        file_path = os.path.join(module_dir, '..', '..', '..', 'static/models.simple_model.sav')
+        static_path = os.path.join(module_dir, '..', '..', 'static')
+        model_path = os.path.join(static_path, 'models', 'simple_model.sav')
+        preprocessing_path = os.path.join(static_path, 'preprocessing', 'tfidf_vectorizer.sav')
 
-        model = pickle.load(open(file_path, "rb"))
+        model = pickle.load(open(model_path, "rb"))
         #scaler = pickle.load(open("scaler.sav", "rb"))
+        preprocessing = pickle.load(open(preprocessing_path, "rb"))
+
+        input_data = request.data['src_text']
+        feature = preprocessing.transform([input_data])
 
         #prediction = model.predict(scaler.transform(request.data))
-        prediction = model.predict(request.data['src_text'])
+        prediction = model.predict(feature)
 
 
         label = prediction["label"] if "label" in prediction else "error"
@@ -106,6 +112,6 @@ class PredictView(views.APIView):
         )
         ml_request.save()
 
-        prediction["request_id"] = ml_request.id
-
-        return render(request, 'endpoints:result.html', {'prediction':prediction})
+        # TODO: Figure out Django template routing
+        #return render(request, 'main:prediction', {'prediction':prediction})
+        return Response(prediction)
