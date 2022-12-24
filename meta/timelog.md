@@ -202,4 +202,9 @@
 
 ### 23 Dec 2022
 
-*0.5 hours* Improving form in website
+* *0.5 hours* Improving form in website
+* *1 hour* Continuing to improve form, setting up CSS
+
+### 24 Dec 2022
+
+* *09:00 - 

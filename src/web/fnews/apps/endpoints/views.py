@@ -7,6 +7,7 @@ from rest_framework.exceptions import APIException
 from apps.endpoints.models import Endpoint, MLAlgorithm, MLAlgorithmStatus, MLRequest
 from apps.endpoints.serializers import EndpointSerializer, MLAlgorithmSerializer, MLAlgorithmStatusSerializer, MLRequestSerializer
 
+import os
 import json
 import pickle
 from numpy.random import rand
@@ -84,11 +85,15 @@ class PredictView(views.APIView):
         #algorithm_object = registry.endpoints[algs[alg_index].id]
         #prediction = algorithm_object.predict(request.data)
 
-        # TODO: Save model & scaler in files
-        model = pickle.load(open("easy_ml_model.sav", "rb"))
-        scaler = pickle.load(open("scaler.sav", "rb"))
+        
+        module_dir = os.path.dirname(__file__)  # get current directory
+        file_path = os.path.join(module_dir, '..', '..', '..', 'static/models.simple_model.sav')
 
-        prediction = model.predict(scaler.transform(request.data))
+        model = pickle.load(open(file_path, "rb"))
+        #scaler = pickle.load(open("scaler.sav", "rb"))
+
+        #prediction = model.predict(scaler.transform(request.data))
+        prediction = model.predict(request.data['src_text'])
 
 
         label = prediction["label"] if "label" in prediction else "error"
