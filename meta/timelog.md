@@ -207,4 +207,9 @@
 
 ### 24 Dec 2022
 
-* *09:00 - 
+* *0.5 hours* Finishing prediction mechanism for simple model (w/o BERT)
+* *0.5 hours* Preparing to use multiple features
+
+## 27 Dec 2022
+
+* *1 hour* Feature engineering (only time-related feature left)
