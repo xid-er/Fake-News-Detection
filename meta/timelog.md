@@ -188,6 +188,7 @@
 * *1 hour* Researching batch sizes for BERT, almost there! Input IDs!
 * *2 hours* Setting up Django website
 
+
 ## Week 13 (2nd week in Malaysia)
 
 ### 20 Dec 2022
@@ -210,6 +211,18 @@
 * *0.5 hours* Finishing prediction mechanism for simple model (w/o BERT)
 * *0.5 hours* Preparing to use multiple features
 
-## 27 Dec 2022
+
+## Week 14 (3rd week in Malaysia)
+
+### 27 Dec 2022
 
 * *1 hour* Feature engineering (only time-related feature left)
+
+### 28 Dec 2022
+
+* *0.5 hours* Figuring out time feature
+
+### 30 Dec 2022
+
+* *1 hour* Figured out date-time feature engineering (just use hour of the day and encode one-hot)
+* *1 hour* Figuring out how to apply model fitting in batches
