@@ -194,7 +194,6 @@
 ### 20 Dec 2022
 
 * *0.5 hours* Adding Logistic Regression to server
-* *12:06 -12:18* 
 
 ### 22 Dec 2022
 
@@ -226,3 +225,14 @@
 
 * *1 hour* Figured out date-time feature engineering (just use hour of the day and encode one-hot)
 * *1 hour* Figuring out how to apply model fitting in batches
+
+### 31 Dec 2022
+
+* *1 hour* Feature engineering practical side (putting it all together)
+
+
+## Week 15 (4th week in Malaysia)
+
+### 03 Jan 2023
+
+* *0.5 hours* Starting to apply BERT with categorical features
