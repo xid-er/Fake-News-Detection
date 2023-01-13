@@ -88,3 +88,13 @@ Fixed the imbalance in the dataset by randomly choosing as many real news tweets
 Dummy most frequent: 49.5% (-18.8% since last time) (This 50/50 split is very promising for the seeming validity of the dataset)
 Logistic Regression: 68.0% (-3.7%) (surprisingly not much regression)
 SVC: 61.4% (-8.7%) (a much larger regression, but less than half of Dummy model's)
+
+
+Week 1 of Sem 2: 09/01/23 - 13/01/23
+
+•	Set up basic functionality of the Django website with a Bootstrap frontend
+•	Included the API necessary for the simpler (text-only) model to work, and it predicts text as intended (worse than the multi-feature model, naturally)
+•	Made my PythonAnywhere account ready for submitting the website code to put up live
+•	Figured out how to do time engineering by simplifying the date-time to a standardised time (with time zone differentiation)
+•	Noticed and fixed inappropriate indexing in the concatenated dataset that was happening before
+•	Decided to implement a text-only approach for multiple features which I include as part of sentences (e.g., “I am (not) verified.”), which is left to train
