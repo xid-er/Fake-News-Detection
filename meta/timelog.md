@@ -257,4 +257,4 @@
 ### 13 Jan 2023
 
 * *0.5 hours* Writing work done
-* *0.5 hours* Supervisor meeting
+* *0.5 hours* Supervisor meeting + writing meeting minutes
