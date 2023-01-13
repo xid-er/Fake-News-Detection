@@ -236,3 +236,25 @@
 ### 03 Jan 2023
 
 * *0.5 hours* Starting to apply BERT with categorical features
+
+
+## Week 18 (1st week of Sem 2)
+
+### 09 Jan 2023
+
+* *1 hour* Multimodal BERT configuration
+* *1.5 hours* Gathering all features into text
+
+### 10 Jan 2023
+
+* *0.5 hours* Applying BERT
+* *1 hour* Fixing dataset indices
+
+### 12 Jan 2023
+
+* *3 hours* Applying BERT to unimodal model
+
+### 13 Jan 2023
+
+* *0.5 hours* Writing work done
+* *0.5 hours* Supervisor meeting
