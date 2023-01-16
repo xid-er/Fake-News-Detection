@@ -258,3 +258,15 @@
 
 * *0.5 hours* Writing work done
 * *0.5 hours* Supervisor meeting + writing meeting minutes
+
+### 15 Jan 2023
+
+* *1 hour* Reading HuggingFace docs to apply "gradient check-pointing", cleaning codebase
+* *1 hour* Trying out training, takes 8x4 days (for 4 epochs) (calculated from 40 batches of 18,771 taking 25 minutes), plan to download CUDA, cuDNN and use GPU; also cleaning and separating code for simple model vs multi-feature (+ BERT) model
+
+(71.5 hours above)
+
+### 16 Jan 2023
+
+* *1 hour* Trying out training in Google Colab, 40 batches in 38 seconds! (but still means that 1 epoch takes 5 hours). Worth still trying CUDA?
+* *1 hour* Catching up on website, planning to train overnight

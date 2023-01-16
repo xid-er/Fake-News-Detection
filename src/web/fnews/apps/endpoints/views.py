@@ -113,5 +113,5 @@ class PredictView(views.APIView):
         ml_request.save()
 
         # TODO: Figure out Django template routing
-        #return render(request, 'main:prediction', {'prediction':prediction})
-        return Response(prediction)
+        return render(request, 'main:prediction', {'prediction':prediction})
+        #return Response(prediction)
