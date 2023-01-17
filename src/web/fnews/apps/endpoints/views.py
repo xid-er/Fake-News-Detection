@@ -7,6 +7,8 @@ from rest_framework.exceptions import APIException
 from apps.endpoints.models import Endpoint, MLAlgorithm, MLAlgorithmStatus, MLRequest
 from apps.endpoints.serializers import EndpointSerializer, MLAlgorithmSerializer, MLAlgorithmStatusSerializer, MLRequestSerializer
 
+from apps.main.forms import MLForm
+
 import os
 import json
 import pickle
@@ -65,53 +67,64 @@ class MLRequestViewSet(
     queryset = MLRequest.objects.all()
 
 class PredictView(views.APIView):
+    form_class = MLForm
+    initial = {'prediction': 'value'}
+    template_name = 'index.html'
+
     def post(self, request, endpoint_name, format=None):
 
-        algorithm_version = self.request.query_params.get("version")
+        form = self.form_class(request.POST)
+        if form.is_valid:
 
-        algs = MLAlgorithm.objects.filter(parent_endpoint__name = endpoint_name, status__active=True)
 
-        if algorithm_version is not None:
-            algs = algs.filter(version = algorithm_version)
+            algorithm_version = self.request.query_params.get("version")
 
-        if len(algs) == 0:
-            return Response(
-                {"status": "Error", "message": "ML algorithm is not available"},
-                status=status.HTTP_400_BAD_REQUEST,
+            algs = MLAlgorithm.objects.filter(parent_endpoint__name = endpoint_name, status__active=True)
+
+            if algorithm_version is not None:
+                algs = algs.filter(version = algorithm_version)
+
+            if len(algs) == 0:
+                return Response(
+                    {"status": "Error", "message": "ML algorithm is not available"},
+                    status=status.HTTP_400_BAD_REQUEST,
+                )
+
+            alg_index = 0
+
+            #algorithm_object = registry.endpoints[algs[alg_index].id]
+            #prediction = algorithm_object.predict(request.data)
+            
+            module_dir = os.path.dirname(__file__)  # get current directory
+            static_path = os.path.join(module_dir, '..', '..', 'static')
+            model_path = os.path.join(static_path, 'models', 'simple_model.sav')
+            preprocessing_path = os.path.join(static_path, 'preprocessing', 'tfidf_vectorizer.sav')
+
+            model = pickle.load(open(model_path, "rb"))
+            #scaler = pickle.load(open("scaler.sav", "rb"))
+            preprocessing = pickle.load(open(preprocessing_path, "rb"))
+
+            input_data = request.data['src_text']
+            feature = preprocessing.transform([input_data])
+
+            #prediction = model.predict(scaler.transform(request.data))
+            prediction = model.predict(feature)
+
+
+            label = prediction["label"] if "label" in prediction else "error"
+            ml_request = MLRequest(
+                input_data=json.dumps(request.data),
+                full_response=prediction,
+                response=label,
+                feedback="",
+                parent_mlalgorithm=algs[alg_index],
             )
+            ml_request.save()
 
-        alg_index = 0
+            # TODO: Figure out Django template routing
+            #return redirect()
+            return render(request, 'main/prediction.html', {'prediction': prediction})
+            #return Response(prediction)
 
-        #algorithm_object = registry.endpoints[algs[alg_index].id]
-        #prediction = algorithm_object.predict(request.data)
-
-        
-        module_dir = os.path.dirname(__file__)  # get current directory
-        static_path = os.path.join(module_dir, '..', '..', 'static')
-        model_path = os.path.join(static_path, 'models', 'simple_model.sav')
-        preprocessing_path = os.path.join(static_path, 'preprocessing', 'tfidf_vectorizer.sav')
-
-        model = pickle.load(open(model_path, "rb"))
-        #scaler = pickle.load(open("scaler.sav", "rb"))
-        preprocessing = pickle.load(open(preprocessing_path, "rb"))
-
-        input_data = request.data['src_text']
-        feature = preprocessing.transform([input_data])
-
-        #prediction = model.predict(scaler.transform(request.data))
-        prediction = model.predict(feature)
-
-
-        label = prediction["label"] if "label" in prediction else "error"
-        ml_request = MLRequest(
-            input_data=json.dumps(request.data),
-            full_response=prediction,
-            response=label,
-            feedback="",
-            parent_mlalgorithm=algs[alg_index],
-        )
-        ml_request.save()
-
-        # TODO: Figure out Django template routing
-        return render(request, 'main:prediction', {'prediction':prediction})
-        #return Response(prediction)
+        else:
+            return render(request, self.template_name, {'form': form})

@@ -270,3 +270,7 @@
 
 * *1 hour* Trying out training in Google Colab, 40 batches in 38 seconds! (but still means that 1 epoch takes 5 hours). Worth still trying CUDA?
 * *1 hour* Catching up on website, planning to train overnight
+
+### 17 Jan 2023
+
+* *19:30 - 

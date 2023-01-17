@@ -17,14 +17,17 @@ from django.contrib import admin
 from django.urls import path, include
 from apps.endpoints import views as end_views
 from apps.main import views as main_views
+import fnews.views as project_views
 
 from apps.endpoints.urls import urlpatterns as endpoints_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', main_views.index, name="index"),
-    #path('result/', end_views.result, name='result'),
-    path('main/', include('apps.main.urls'))
+    # path('', main_views.index, name="index"),
+    # #path('result/', end_views.result, name='result'),
+    #path('main/', include('apps.main.urls')),
+    path('', project_views.home, name="home"),
+    path('result/', project_views.result, name='result'),
 ]
 
 urlpatterns += endpoints_urlpatterns
