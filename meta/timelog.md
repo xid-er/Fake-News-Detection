@@ -273,4 +273,4 @@
 
 ### 17 Jan 2023
 
-* *19:30 - 
+* *3.5 hours* Building website routing, finished simple model!
