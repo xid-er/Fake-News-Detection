@@ -98,3 +98,17 @@ Week 1 of Sem 2: 09/01/23 - 13/01/23
 •	Figured out how to do time engineering by simplifying the date-time to a standardised time (with time zone differentiation)
 •	Noticed and fixed inappropriate indexing in the concatenated dataset that was happening before
 •	Decided to implement a text-only approach for multiple features which I include as part of sentences (e.g., “I am (not) verified.”), which is left to train
+
+
+Week 2 of Sem 2: 15/01/23 - 20/01/23
+
+Biggest problem first of all: I have tried multiple times to train the complex model on Google Colab and my personal laptop but:
+* Google Colab has limited resources of GPU use and continuous running of training (up to 90 minutes of inactivity and 12 hours of "active" running), but it kept disconnecting the runtime and deleting all files (which meant that I couldn't even save the weights midway through) and I have run out of those resources
+* CUDA is being extremely uncooperative and not allowing me to use it in Jupyter Notebook because of very complicated versioning between the different components: CUDA, cuDNN, pytorch, transformers package, exactly
+Because of this, I would really appreciate your help in using the university servers (if they have CUDA) to run the training of my model if possible. I really apologise if this is very late to ask.
+
+Secondly, what I've done apart from experimenting with and giving up on training the model: 
+* Finished the backend of the website with core page navigation and prediction using simple model
+* Got Twitter API to work and ready for using the feature for complex model
+
+Will showcase the things I've done in the meeting :)

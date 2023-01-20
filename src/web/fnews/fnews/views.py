@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
 import os
+import re
 import pickle
 import tweepy
 import pandas as pd
@@ -49,7 +50,7 @@ def get_prediction(src_text, model_type):
         # )
         # client = tweepy.API(auth)
 
-        tweet_id = src_text # TODO: grep
+        tweet_id = re.findall('\d+', src_text)[0]
         response = client.get_tweets(
             tweet_id, 
             tweet_fields=

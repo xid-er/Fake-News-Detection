@@ -259,6 +259,9 @@
 * *0.5 hours* Writing work done
 * *0.5 hours* Supervisor meeting + writing meeting minutes
 
+
+## Week 19 (Week 2)
+
 ### 15 Jan 2023
 
 * *1 hour* Reading HuggingFace docs to apply "gradient check-pointing", cleaning codebase
@@ -285,4 +288,5 @@
 
 ### 20 Jan 2023
 
-* 
+* *1 hour* Got Twitter API to work in website
+* *0.5 hours* Writing work done
