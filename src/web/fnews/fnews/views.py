@@ -2,6 +2,9 @@ from django.shortcuts import render
 
 import os
 import pickle
+import tweepy
+import pandas as pd
+from dotenv import load_dotenv
 
 # our home page view
 def home(request):    
@@ -25,7 +28,62 @@ def get_prediction(src_text, model_type):
         prediction = model.predict(feature)[0]
 
     elif model_type == 'complex_model':
-        prediction = "Complex chosen (WIP)" # TODO
+        load_dotenv()
+        api_key = os.environ.get('APIKey')
+        api_key_secret = os.environ.get('APIKeySecret')
+        access_token = os.environ.get('AccessToken')
+        access_token_secret = os.environ.get('AccessTokenSecret')
+        bearer_token = os.environ.get('BearerToken')
+
+        client = tweepy.Client(
+            consumer_key=api_key, 
+            consumer_secret=api_key_secret,
+            access_token=access_token, 
+            access_token_secret=access_token_secret,
+            bearer_token=bearer_token, 
+            wait_on_rate_limit=True,
+        )
+
+        # auth = tweepy.OAuth1UserHandler(
+        #     api_key, api_key_secret, access_token, access_token_secret
+        # )
+        # client = tweepy.API(auth)
+
+        tweet_id = src_text # TODO: grep
+        response = client.get_tweets(
+            tweet_id, 
+            tweet_fields=
+                ["created_at", "text", "lang", "author_id", "source"],
+            user_fields=
+                ["location", "description", "verified"],
+            expansions="author_id"
+        )
+        print(response)
+        #tweets_dict = response.json()
+
+        fields = ['id', 'text', 'author_id', 'source', 'created_at', 'edit_history_tweet_ids', 'lang', 'description', 'username', 'verified', 'name', 'location']
+
+        tweet_data = response.data[0] # can fail if nans in Tweets
+        user_data = response.includes['users'][0]
+
+        print("tweet:",tweet_data)
+        print("user:",user_data)
+
+        combined = ""
+    
+        combined += f"I created this Tweet at {tweet_data.created_at} o'clock " + \
+            f"in the {tweet_data.lang} language and in {user_data.location} " + \
+            f"from {tweet_data.source}. "
+            
+        verification_status = "verified" if user_data.verified else "not verified"
+        combined += f"My name is {user_data.name}, username is {user_data.username} " + \
+            f"and I am {verification_status}. "
+        
+        combined += f"I would describe myself as {user_data.description}. "
+        
+        combined += f"I wrote: {tweet_data.text} "
+        prediction = combined
+
     else:
         prediction = "No valid algorithm chosen"
         

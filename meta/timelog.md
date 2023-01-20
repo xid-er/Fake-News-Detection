@@ -274,3 +274,15 @@
 ### 17 Jan 2023
 
 * *3.5 hours* Building website routing, finished simple model!
+
+### 18 Jan 2023
+
+* *16:00 - 16:30* Giving up on Colab
+
+### 19 Jan 2023
+
+* *5 min* Refresh memory of Twitter API
+
+### 20 Jan 2023
+
+* 
