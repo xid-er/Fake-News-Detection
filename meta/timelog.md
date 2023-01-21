@@ -260,7 +260,7 @@
 * *0.5 hours* Supervisor meeting + writing meeting minutes
 
 
-## Week 19 (Week 2)
+## Week 19 (Sem 2 Week 2)
 
 ### 15 Jan 2023
 
@@ -290,3 +290,12 @@
 
 * *1 hour* Got Twitter API to work in website
 * *0.5 hours* Writing work done
+* *0.5 hours* Supervisor meeting
+* *1 hour* Experimenting with stlinux11-12, found out there's no pip, downloading CUDA
+
+
+## Week 20 (Sem 2 Week 3)
+
+### 21 Jan 2023
+
+* *1 hour* Researching background (lit review)

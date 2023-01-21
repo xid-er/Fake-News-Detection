@@ -137,3 +137,10 @@ Notes:
 * Text-only/Unimodal model with multiple features is okay to continue to work on, no need to worry about weights of the features, but investigation option: don't put full sentences for features, just say the feature (like "not verified" instead of "I am not verified").
 * Will write the dissertation while working on code (rest from one by working on the other), but dissertation progress is satisfactory.
 * Most immediate tasks: Finish unimodal model, put into website, then include Twitter API and submit on PythonAnywhere.
+
+
+## 20 Jan 2023
+
+Notes:
+* Try setting up a venv in stlinux-11/12 and see if I can use CUDA to GPU-accelerate training
+* Able to look through lit review (earlier the better)
