@@ -139,4 +139,4 @@ dmypy.json
 src/data/
 
 # Model weights
-.sav
+*.sav

@@ -119,4 +119,6 @@ Week 3 of Sem 2: 21/01/23 - 26/01/23
 Finally trained the BERT model! Only took 24 hours...
 Got it done by figuring out that there was something wrong with virtual environments on my laptop, which, after fixing that, allowed me to finally install CUDA and run it on my laptop.
 First I tried the stlinux servers, but they didn't even have conda or pip in their system variables, so I thought it would be too much of a hassle to figure it out.
- 0.986
+That's the good news regarding the model. The not so good news: the model's F1 score is 0.986. Looking at validation loss, it visibly overfitted, and the high F1-score shows as much. But it's working at least!
+The better news is that I've improved the website, so that works, and tested out some fake news from PolitiFact, which also works (sometimes, and this I want to talk about). As well as that, I've written a page of the background. Will showcase everything tomorrow.
+I wanted to also discuss how much of my background should be a literature review and how much should be explanations about NLP, machine learning, fake news, etc, since a lot of dissertations from the so-called Hall of Fame (ones that got high A marks in previous years) focus more on explanations.

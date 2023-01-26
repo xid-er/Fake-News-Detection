@@ -144,3 +144,14 @@ Notes:
 Notes:
 * Try setting up a venv in stlinux-11/12 and see if I can use CUDA to GPU-accelerate training
 * Able to look through lit review (earlier the better)
+
+
+## 27 Jan 2023
+
+Before meeting:
+* High F1 score
+* Background - literature review + explanations?
+* Complex model size is half a gigabyte. Any other options than PythonAnywhere?
+* Models seem to not do well with current fake news, but that's understandable right?
+
+Notes:

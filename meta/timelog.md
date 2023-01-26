@@ -317,4 +317,5 @@
 ### 26 Jan 2023
 
 * *0.5 hours* Evaluating complex model
-* *0.5 hours* Moving complex model to website
+* *1.5 hours* Moving complex model to website
+* *1 hour* Finding examples of fake and real news, writing work done.
