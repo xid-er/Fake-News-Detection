@@ -299,3 +299,22 @@
 ### 21 Jan 2023
 
 * *1 hour* Researching background (lit review)
+
+### 22 Jan 2023
+
+* *0.5 hours* Researching background
+
+### 23 Jan 2023
+
+* *1 hour* Researching background
+
+### 25 Jan 2023
+
+* *1 hour* Researching background + FINALLY GOT CUDA TO WORK!
+* *1 hour* Writing background, running training on model, figuring out bibliography
+* *1 hour* Writing background
+
+### 26 Jan 2023
+
+* *0.5 hours* Evaluating complex model
+* *0.5 hours* Moving complex model to website

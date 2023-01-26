@@ -112,3 +112,11 @@ Secondly, what I've done apart from experimenting with and giving up on training
 * Got Twitter API to work and ready for using the feature for complex model
 
 Will showcase the things I've done in the meeting :)
+
+
+Week 3 of Sem 2: 21/01/23 - 26/01/23
+
+Finally trained the BERT model! Only took 24 hours...
+Got it done by figuring out that there was something wrong with virtual environments on my laptop, which, after fixing that, allowed me to finally install CUDA and run it on my laptop.
+First I tried the stlinux servers, but they didn't even have conda or pip in their system variables, so I thought it would be too much of a hassle to figure it out.
+ 0.986

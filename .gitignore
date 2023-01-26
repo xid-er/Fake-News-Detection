@@ -137,3 +137,6 @@ dmypy.json
 
 # Dataset
 src/data/
+
+# Model weights
+.sav
