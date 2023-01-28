@@ -20,6 +20,7 @@ def get_prediction(src_text, model_type):
     static_path = os.path.join(module_dir, '..', 'static')
 
     if model_type == 'simple_model':
+        valid_source = True
         source = src_text
         model_path = os.path.join(static_path, 'models', 'simple_model.sav')
         preprocessing_path = os.path.join(static_path, 'preprocessing', 'tfidf_vectorizer.sav')
@@ -37,8 +38,12 @@ def get_prediction(src_text, model_type):
         model = pickle.load(open(model_path, "rb"))
 
         sentence = fetch_tweet(src_text)
-        if sentence is None:
-            return None, None
+        if sentence == "no data":
+            return False, None, "It seems that the Tweet has been removed."
+        elif sentence == "no link":
+            return False, None, "That does not seem to be a valid link to a Tweet."
+        else:
+            valid_source = True
 
         source = sentence
         print(sentence)
@@ -83,7 +88,12 @@ def get_prediction(src_text, model_type):
     else:
         prediction = "No valid algorithm chosen"
 
-    return source, prediction
+    if prediction is True:
+        prediction = "Real News"
+    else:
+        prediction = "Fake News"
+
+    return valid_source, source, prediction
 
 def result(request):
     print(request.GET)
@@ -93,12 +103,13 @@ def result(request):
     model_type = request.GET['model_select']
     print(model_type)
 
-    source, prediction = get_prediction(src_text, model_type)
+    valid_source, source, prediction = get_prediction(src_text, model_type)
 
     return render(
         request, 
         'prediction.html', 
         {
+            'valid_source': valid_source, 
             'source': source,
             'prediction':prediction
         })
@@ -121,8 +132,12 @@ def fetch_tweet(link):
         wait_on_rate_limit=True,
     )
 
-    tweet_id = re.findall('/status/(\d+)', link)[0]
+    regex_numbers = re.findall('/status/(\d+)', link)
+    if len(regex_numbers) == 0:
+        return "no link"
+    tweet_id = regex_numbers[0]
     print("Searching tweet with ID", tweet_id)
+
     response = client.get_tweets(
         tweet_id, 
         tweet_fields=
@@ -133,7 +148,7 @@ def fetch_tweet(link):
     )
     print(response)
     if response.data is None:
-        return None
+        return "no data"
 
     tweet_data = response.data[0] # can fail if nans in Tweets
     user_data = response.includes['users'][0]

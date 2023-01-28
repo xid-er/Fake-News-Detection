@@ -319,3 +319,13 @@
 * *0.5 hours* Evaluating complex model
 * *1.5 hours* Moving complex model to website
 * *1 hour* Finding examples of fake and real news, writing work done.
+
+### 27 Jan 2023
+* *0.5 hours* Supervisor meeting
+
+
+## Week 21 (Sem 2 Week 4)
+
+### 28 Jan 2023
+
+* *14:40 - 

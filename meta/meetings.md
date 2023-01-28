@@ -155,3 +155,8 @@ Before meeting:
 * Models seem to not do well with current fake news, but that's understandable right?
 
 Notes:
+* To check why the model works with only certain recent fake news (like the Bill Gates one), look into certain phrases that appear in the dataset and whether they might influence the accuracy of the model for recent fake news.
+* To better understand the F1 score, look at accuracy and confusion matrix (and the text behind the wrongly classified Tweets) of the model. Should do by hand to truly understand.
+* If PythonAnywhere is too small of a storage space to host the weights of the complex model, ask school support if I can host there. Hopefully, 512 MBs will be enough with the complex model being 422 MBs.
+* Topics that can be added in literature review: classification in general (semantic, e.g., depression example by the other student), machine learning (tailor to average Computer Scientist).
+* Since the focus of the project has mainly been to build the best model, the dissertation should focus more on research and background, not the tool, which is why most research papers also do not mention the practical aspect of their model. Can write about this in the dissertation.
