@@ -328,4 +328,16 @@
 
 ### 28 Jan 2023
 
-* *14:40 - 
+* *0.5 hours* Writing work done
+
+### 29 Jan 2023
+
+* *1 hour* Reading research
+* *0.5 hours* Investigating errors
+* *0.5 hours* Writing background
+* *0.5 hours* Watching summary videos about ML and NLP
+* *0.5 hours* Writing background
+
+### 30 Jan 2023
+
+* *1 hour* Writing background
