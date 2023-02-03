@@ -160,3 +160,11 @@ Notes:
 * If PythonAnywhere is too small of a storage space to host the weights of the complex model, ask school support if I can host there. Hopefully, 512 MBs will be enough with the complex model being 422 MBs.
 * Topics that can be added in literature review: classification in general (semantic, e.g., depression example by the other student), machine learning (tailor to average Computer Scientist).
 * Since the focus of the project has mainly been to build the best model, the dissertation should focus more on research and background, not the tool, which is why most research papers also do not mention the practical aspect of their model. Can write about this in the dissertation.
+
+
+## 3 Feb 2023
+
+Before meeting:
+* Any look through background section for dissertation?
+* What to do if part of my dataset is in other languages?
+* What to do about my complex model being the standard BERT?

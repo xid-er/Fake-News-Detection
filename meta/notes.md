@@ -32,3 +32,31 @@ SVC: 70.1% (-17.9%)
 Dummy most frequent: 49.5% (-18.8%) \[32.7%]
 Logistic Regression: 68.0% (-3.7%) \[66.2%]
 SVC: 61.4% (-8.7%) \[56.8%]
+
+## F1 score of FakeNewsNet with BERT
+
+0.986
+
+## Other metrics:
+
+## Dataset phrase analysis
+
+Bill Gates:
+* Fake: 608 / 108_930 (0.56%)
+* Real: 44 / 296_170 (0.01%)
+
+Trump:
+* Fake: 23_161 (21.26%)
+* Real: 59_694 (20.16%)
+
+Clinton:
+* Fake: 3049 (2.80%)
+* Real: 8842 (2.99%)
+
+Pelosi:
+* Fake: 1295 (1.19%)
+* Real: 1740 (0.59%)
+
+Vaccine:
+* Fake: 6040 (5.54%)
+* Real: 568 (1.92%)

@@ -341,3 +341,21 @@
 ### 30 Jan 2023
 
 * *1 hour* Writing background
+
+### 31 Jan 2023
+
+* *1.5 hours* Writing background
+
+### 1 Feb 2023
+
+* *1 hour* Reading background research
+* *1.5 hours* Writing background
+
+### 2 Feb 2023
+
+* *1 hour* Evaluating model (accuracy, confusion matrix)
+
+### 3 Feb 2023
+
+* *0.5 hours* Evaluating model (confusion matrix)
+* *0.5 hours* Writing work done

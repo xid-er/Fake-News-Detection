@@ -122,3 +122,12 @@ First I tried the stlinux servers, but they didn't even have conda or pip in the
 That's the good news regarding the model. The not so good news: the model's F1 score is 0.986. Looking at validation loss, it visibly overfitted, and the high F1-score shows as much. But it's working at least!
 The better news is that I've improved the website, so that works, and tested out some fake news from PolitiFact, which also works (sometimes, and this I want to talk about). As well as that, I've written a page of the background. Will showcase everything tomorrow.
 I wanted to also discuss how much of my background should be a literature review and how much should be explanations about NLP, machine learning, fake news, etc, since a lot of dissertations from the so-called Hall of Fame (ones that got high A marks in previous years) focus more on explanations.
+
+
+Week 4 of Sem 2: 27/01/23 - 03/02/23
+
+Most of the work this week was spent towards the background section of my dissertation, which I hope will prove to be a good first draft, so I haven't done much in terms of model evaluation, but I have done some:
+Confusion matrix and accuracy (0.981) evaluation of the complex model, which I will share in the meeting. 
+I have also analysed a few phrase occurrences in the dataset, most of which seem fine (except for Bill Gates, as you correctly guessed). Trump (20%) and Clinton (3%) both got around the same percentage.
+One of the big problems that I wanted to discuss with you today was the fact that I found out that 11_708 out of 159_460 Tweets (7.34%) in my training dataset are not even in English when I had not used a multilingual BERT model. Would this be a big problem to quickly rectify or is this maybe something I could talk about in my dissertation as a point to improve?
+The other problem is that I've realised only now how many different versions of BERT there are (found in the sidebar on https://huggingface.co/docs/transformers/model_doc/bertweet), and I've used only the standard version of BERT without any other pre-fine-tuning. Is this a problem as well?
