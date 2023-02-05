@@ -359,3 +359,16 @@
 
 * *0.5 hours* Evaluating model (confusion matrix)
 * *0.5 hours* Writing work done
+
+
+## Week 22 (Sem 2 Week 5)
+
+### 4 Feb 2023
+
+* *1 hour* Reading Hall of Fame for Introduction Inspo
+* *1.5 hours* Writing Intro
+* *0.5 hours* Removing foreign languages from dataset
+
+### 5 Feb
+
+* *0.5 hours* Fixing bugs for second training

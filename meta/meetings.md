@@ -168,3 +168,10 @@ Before meeting:
 * Any look through background section for dissertation?
 * What to do if part of my dataset is in other languages?
 * What to do about my complex model being the standard BERT?
+
+Notes:
+* Regarding dissertation: You said that you'll get around to reading the background section of my dissertation soon, maybe even this afternoon.
+* Regarding the confusion matrix: It is not surprising that the errors are quite skewed towards mislabelling real news, especially because 1) the test dataset is skewed itself (more real than fake), and 2) it is not uncommon in other research either. Generally, an impressive confusion matrix which should be improved even more by percentages/balance.
+* Regarding phrases in dataset: it makes sense for less popular topics (like 'Pelosi' and 'Bill Gates') to be spoken more by one group than for more popular topics (like 'Trump' and 'Clinton'), which are discussed by both real and fake news.
+* Regarding foreign languages apparent in dataset: If I have time to leave my laptop running to train the model again from scratch, throw away the other languages. Otherwise, keep them. In either case, discuss in dissertation (as either dataset operations or limitations).
+* Regarding BERT not being 'latest and greatest': That's not what the project is about, it's more about research and writing about learning (and the process), so I shouldn't worry so much about not using the best model. Also because BERT is already great.
