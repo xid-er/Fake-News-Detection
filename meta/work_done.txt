@@ -131,3 +131,9 @@ Confusion matrix and accuracy (0.981) evaluation of the complex model, which I w
 I have also analysed a few phrase occurrences in the dataset, most of which seem fine (except for Bill Gates, as you correctly guessed). Trump (20%) and Clinton (3%) both got around the same percentage.
 One of the big problems that I wanted to discuss with you today was the fact that I found out that 11_708 out of 159_460 Tweets (7.34%) in my training dataset are not even in English when I had not used a multilingual BERT model. Would this be a big problem to quickly rectify or is this maybe something I could talk about in my dissertation as a point to improve?
 The other problem is that I've realised only now how many different versions of BERT there are (found in the sidebar on https://huggingface.co/docs/transformers/model_doc/bertweet), and I've used only the standard version of BERT without any other pre-fine-tuning. Is this a problem as well?
+
+
+Week 5 of Sem 2: 04/02/23 - 09/02/23
+
+Again, most of the work this week was spent towards the dissertation, this time I've completed first drafts of the Introduction and Requirements sections of the dissertation. I also included more detail about the transformer, let me know what you think!
+I also removed foreign languages from the dataset and re-ran the training of the model over Sunday while traveling to Edinburgh, which means that the model's performance on the dataset is even better now: F1 score of 0.994 and accuracy of 0.992.

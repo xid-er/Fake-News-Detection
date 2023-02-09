@@ -372,3 +372,15 @@
 ### 5 Feb
 
 * *0.5 hours* Fixing bugs for second training
+
+### 7 Feb
+
+* *2 hours* Writing Requirements
+
+### 8 Feb
+
+* *1 hour* Writing Requirements
+
+### 9 Feb
+
+* *0.5 hours* Writing work done

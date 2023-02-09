@@ -140,3 +140,4 @@ src/data/
 
 # Model weights
 *.sav
+*.pth
