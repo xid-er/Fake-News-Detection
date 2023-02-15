@@ -365,7 +365,7 @@
 
 ### 4 Feb 2023
 
-* *1 hour* Reading Hall of Fame for Introduction Inspo
+* *1 hour* Reading Hall of Fame for Introduction inspo
 * *1.5 hours* Writing Intro
 * *0.5 hours* Removing foreign languages from dataset
 
@@ -384,3 +384,16 @@
 ### 9 Feb
 
 * *0.5 hours* Writing work done
+
+### 10 Feb
+
+* *0.5 hours* Standardising confusion matrix
+
+
+## Week 23 (Sem 2 Week 6)
+
+### 12 Feb 2023
+
+* *1 hour* Reading Design inspo and writing Design (Structure, Dataset, NLP)
+* *1 hour* Creating Design graph
+* *0.5 hours* Writing Design (ML Models, Overview) and scribbling in Implementation

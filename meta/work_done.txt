@@ -137,3 +137,4 @@ Week 5 of Sem 2: 04/02/23 - 09/02/23
 
 Again, most of the work this week was spent towards the dissertation, this time I've completed first drafts of the Introduction and Requirements sections of the dissertation. I also included more detail about the transformer, let me know what you think!
 I also removed foreign languages from the dataset and re-ran the training of the model over Sunday while traveling to Edinburgh, which means that the model's performance on the dataset is even better now: F1 score of 0.994 and accuracy of 0.992.
+And the final thing I did was standardise the confusion matrix.
