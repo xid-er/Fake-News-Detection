@@ -410,4 +410,6 @@
 
 ### 22 Feb 2023
 
-* *10:50 - 
+* *0.5* Writing Design
+* *0.5* Designing website
+* *21:00 - 

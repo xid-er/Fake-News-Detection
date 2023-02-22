@@ -9,22 +9,21 @@ Home page
 <div class="row">
   <div class="col-sm-4"></div>
   <div class="col-sm-4">
-    <h2 align="center">Fake news classification</h2>
     <form action="{% url 'result' %}">
       {% csrf_token %}
-      <div class="form-group">
+      <div class="form-group pt-2">
         <div align="center">
           <input type="radio" class="btn-check" name="model_select" id="option1" value="simple_model" autocomplete="off" checked>
-          <label class="btn btn-outline-primary" for="option1">Simple (Text-Only) Algorithm</label>
+          <label class="btn btn-outline-success" for="option1">Simple (Text-Only) Algorithm</label>
 
           <input type="radio" class="btn-check" name="model_select" id="option2" value="complex_model" autocomplete="off">
-          <label class="btn btn-outline-primary" for="option2">Feature-Rich Algorithm</label>
+          <label class="btn btn-outline-success" for="option2">Feature-Rich Algorithm</label>
         </div>
-        <p>Source text:</p>
+        <p class="pt-2 text-white">Source text:</p>
         <textarea class="form-control" type="text" name="src_text" placeholder="Paste the text of the Tweet here!"></textarea>
         <br>
 
-        <button class="btn btn-primary form-control" type="submit" value='Make Prediction'>Predict!</button>
+        <button class="btn btn-success form-control" type="submit" value='Make Prediction'>Predict!</button>
       </div>
     </form>
   </div>
