@@ -38,6 +38,7 @@ def get_prediction(src_text, model_type):
         model = pickle.load(open(model_path, "rb"))
 
         sentence = fetch_tweet(src_text)
+
         if sentence == "no data":
             return False, None, "It seems that the Tweet has been removed."
         elif sentence == "no link":
@@ -58,8 +59,6 @@ def get_prediction(src_text, model_type):
                         return_attention_mask = True,   # Construct attn. masks.
                         return_tensors = 'pt',     # Return pytorch tensors.
                 )
-
-        print(encoded_dict)
 
         # Add the encoded sentence to the list.    
         input_ids = encoded_dict['input_ids']
@@ -96,12 +95,9 @@ def get_prediction(src_text, model_type):
     return valid_source, source, prediction
 
 def result(request):
-    print(request.GET)
-
     model_type = None
     src_text = request.GET['src_text']
     model_type = request.GET['model_select']
-    print(model_type)
 
     valid_source, source, prediction = get_prediction(src_text, model_type)
 
@@ -136,7 +132,6 @@ def fetch_tweet(link):
     if len(regex_numbers) == 0:
         return "no link"
     tweet_id = regex_numbers[0]
-    print("Searching tweet with ID", tweet_id)
 
     response = client.get_tweets(
         tweet_id, 
@@ -146,15 +141,11 @@ def fetch_tweet(link):
             ["location", "description", "verified"],
         expansions="author_id"
     )
-    print(response)
     if response.data is None:
         return "no data"
 
     tweet_data = response.data[0] # can fail if nans in Tweets
     user_data = response.includes['users'][0]
-
-    print("tweet:",tweet_data)
-    print("user:",user_data)
 
     combined = ""
 

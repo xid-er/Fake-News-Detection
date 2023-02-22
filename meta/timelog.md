@@ -397,3 +397,17 @@
 * *1 hour* Reading Design inspo and writing Design (Structure, Dataset, NLP)
 * *1 hour* Creating Design graph
 * *0.5 hours* Writing Design (ML Models, Overview) and scribbling in Implementation
+
+### 19 Feb 2023
+
+* *0.5 hours* Writing Implementation
+
+## Week 24 (Sem 2 Week 7)
+
+### 20 Feb 2023
+
+* *2 hours* Writing Design
+
+### 22 Feb 2023
+
+* *10:50 - 
