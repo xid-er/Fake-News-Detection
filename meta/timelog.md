@@ -402,6 +402,7 @@
 
 * *0.5 hours* Writing Implementation
 
+
 ## Week 24 (Sem 2 Week 7)
 
 ### 20 Feb 2023
@@ -411,5 +412,19 @@
 ### 22 Feb 2023
 
 * *0.5* Writing Design
-* *0.5* Designing website
-* *21:00 - 
+* *1.5* Designing website
+
+### 23 Feb 2023
+
+* *1 hour* Writing Implementation
+
+### 24 Feb 2023
+
+* *0.5 hours* Supervisor meeting
+
+
+## Week 25 (Sem 2 Week 8)
+
+### 25 Feb 2023
+
+* *1.5 hours* Writing Implementation

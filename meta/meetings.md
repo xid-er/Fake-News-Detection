@@ -175,3 +175,11 @@ Notes:
 * Regarding phrases in dataset: it makes sense for less popular topics (like 'Pelosi' and 'Bill Gates') to be spoken more by one group than for more popular topics (like 'Trump' and 'Clinton'), which are discussed by both real and fake news.
 * Regarding foreign languages apparent in dataset: If I have time to leave my laptop running to train the model again from scratch, throw away the other languages. Otherwise, keep them. In either case, discuss in dissertation (as either dataset operations or limitations).
 * Regarding BERT not being 'latest and greatest': That's not what the project is about, it's more about research and writing about learning (and the process), so I shouldn't worry so much about not using the best model. Also because BERT is already great.
+
+
+## 24 Feb 2023
+
+Notes:
+* Regarding mentioning someone as a source for the opinion about the distribution of work in a data analytics project: I will find an original source to avoid mentioning you in that part
+* Regarding the diagram: separate saved model weights into 2 not to confuse two ML models (actual) with hybrid ML model (apparent)
+* Regarding the (now standardised) confusion matrix: add up to 1 for true labels OR leave as numbers for easier analysis.
