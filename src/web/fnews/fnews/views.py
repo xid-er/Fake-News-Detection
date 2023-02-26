@@ -149,7 +149,9 @@ def fetch_tweet(link):
 
     combined = ""
 
-    combined += f"I created this Tweet at {tweet_data.created_at} o'clock " + \
+    time_created  = pd.to_datetime(tweet_data.created_at).hour # str to datetime to hour
+
+    combined += f"I created this Tweet at {time_created} o'clock " + \
         f"in the {tweet_data.lang} language and in {user_data.location} " + \
         f"from {tweet_data.source}. "
         
