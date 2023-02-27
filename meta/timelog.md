@@ -431,4 +431,8 @@
 
 ### 26 Feb 2023
 
-* *2 hours* Writing Implementation
+* *4.5 hours* Writing Implementation
+
+### 27 Feb 2023
+
+* *09:30 - 
