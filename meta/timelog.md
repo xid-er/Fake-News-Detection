@@ -436,3 +436,9 @@
 ### 27 Feb 2023
 
 * *2 hours* Writing Implementation
+
+### 28 Feb 2023
+
+* *0.5 hours* Fixing Chris citation, diagram, confusion matrix (TBC)
+* *0.5 hours* Finishing confusion matrix with percentages
+* *14:15 - 
