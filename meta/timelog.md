@@ -441,4 +441,13 @@
 
 * *0.5 hours* Fixing Chris citation, diagram, confusion matrix (TBC)
 * *0.5 hours* Finishing confusion matrix with percentages
-* *14:15 - 
+* *1 hour* Writing Implementation
+* *0.5 hours * Writing Evaluation
+
+### 2 Mar 2023
+
+* *0.5 hours* Writing Evaluation
+
+### 3 Mar 2023
+
+* *0.5 hours* Writing Conclusion

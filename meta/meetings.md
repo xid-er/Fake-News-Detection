@@ -183,3 +183,8 @@ Notes:
 * Regarding mentioning someone as a source for the opinion about the distribution of work in a data analytics project: I will find an original source to avoid mentioning you in that part
 * Regarding the diagram: separate saved model weights into 2 not to confuse two ML models (actual) with hybrid ML model (apparent)
 * Regarding the (now standardised) confusion matrix: add up to 1 for true labels OR leave as numbers for easier analysis.
+
+
+## 3 Mar 2023
+
+Notes:

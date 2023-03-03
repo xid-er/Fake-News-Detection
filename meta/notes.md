@@ -37,8 +37,6 @@ SVC: 61.4% (-8.7%) \[56.8%]
 
 0.986
 
-## Other metrics:
-
 ## Dataset phrase analysis
 
 Bill Gates:
