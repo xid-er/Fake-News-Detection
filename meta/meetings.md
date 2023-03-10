@@ -188,3 +188,15 @@ Notes:
 ## 3 Mar 2023
 
 Notes:
+* Think about adding more visual representation, especially between big text sections
+* Diagram is fine now
+* Bibliography: 3 pages is fine, alphabetical is fine
+* Immediate tasks: Write abstract, host website on PythonAnywhere (and add pictures of it in dissertation), emphasise over-fitting in Conclusion, keep uppercase letters in Bibliography
+
+
+## 10 Mar 2023
+
+Notes:
+* Suggestions for figures to add to dissertation: confusion matrix for Logistic Regression (would be a great/necessary addition), sigmoid (optional)
+* Add an explanation to Evaluation section why the model might be over-fitted: 140 vs 280 Twitter character limit, different political topics, phrase analysis as in Appendix
+* Immediate tasks: Remove BERT from production website (put link to repo), improve dissertation as previously mentioned (figures, over-fitting explanation) 

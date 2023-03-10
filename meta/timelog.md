@@ -451,3 +451,17 @@
 ### 3 Mar 2023
 
 * *0.5 hours* Writing Conclusion
+* *0.5 hours* Supervisor Meeting
+
+
+## Week 26 (Sem 2 Week 9)
+
+### 7 Mar 2023
+
+* *1 hour* Finishing Abstract, fixing Bibliography (uppercase letters), writing Conclusion
+* *0.5 hours* Looking for hosting options
+
+### 10 Mar 2023
+
+* *1 hour* Hosting website
+* *0.5 hours* Supervisor Meeting

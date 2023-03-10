@@ -139,7 +139,16 @@ Again, most of the work this week was spent towards the dissertation, this time 
 I also removed foreign languages from the dataset and re-ran the training of the model over Sunday while traveling to Edinburgh, which means that the model's performance on the dataset is even better now: F1 score of 0.994 and accuracy of 0.992.
 And the final thing I did was standardise the confusion matrix.
 
+
 Week 8 of Sem 2: 25/02/23 - 03/03/23
 
 As I said in the middle of the week, I've implemented all the changes we discussed in our last meeting: the misappropriated quote, the incorrect diagram, and the updated confusion matrix.
 Apart from that, I've finished a first draft of the dissertation, having finished my Implementation, Evaluation, and Conclusion, which comes up to just about 30 pages. I hope that maybe with your some of your feedback I can include more detail, which would increase the page count.
+
+
+Week 9 of Sem 2: 04/03/23 - 10/03/23
+
+This week has been very assessed exercise-heavy, which is why I haven't done everything I wanted for the dissertation/project.
+However, for the dissertation, I've fixed the bibliography lowercase letters, expanded the Conclusion (especially about over-fitting), and wrote the Abstract. I've attached the current state of the dissertation here.
+As for hosting, I've researched free options online, but I'm struggling to find a platform that can host the website with my space requirements not just because of the model weights, but also because of the libraries required. By removing PyTorch, I've successfully hosted the index page, but without the scikit-learn package (also a big one), the results page cannot be loaded. Here's the website:
+http://fakenewsuofg.pythonanywhere.com/
