@@ -1,0 +1,154 @@
+Week 3: 03/10/22 - 06/10/22
+
+Created and shared Trello board to manage tasks.
+Found a climate change-focused dataset with ternary classification: Supports, Not Enough Info, Refutes.
+Found a set of Facebook- and Twitter-only datasets, wanted to discuss in meeting which one is more appropriate.
+* Credbank: Twitter, ~60 million posts, 5 levels of truth  (less trustworthy)
+* PHEME: Twitter, 330 posts, binary classification (true/fake) ---- (same-length posts)
+* BuzzFace: Facebook, 2263 posts, 4 levels of truth
+Researched tutorials to follow for classification; one is training overnight, but seems like the model environment will take the least time for the project, which allows for focusing on more novel parts, like emoji-translation (not yet researched) and the end-user tool (Django website/Browser extension (NB: to discuss) analysing Twitter/Facebook/Text).
+
+
+Week 4: 10/10/22 - 13/10/22
+
+Analysed the smaller Twitter dataset much further by reading the connected article (https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0150989) and after (much difficulty with) importing the dataset into a Python data structure.
+TODO: tokenise data.
+Vectorised dataset with TF-IDF vectoriser.
+Created 3 ML classifier models with the dataset and compared their results:
+* Dummy Classifier with the most-frequent strategy: weighted f1-score - 22.9%
+* SVM/SVC Classifier: weighted f1-score - 58.9%
+* Logistic Regression Classifier: weighted f1-score - 61.2%
+
+Reminder that the code is in the repo: https://github.com/xid-er/Fake-News-Detection
+
+
+Week 5: 17/10/22 - 21/10/22
+
+Experimented with emoji tokenisation and found that performance for all models was worse: there aren't any emojis in the 300-post dataset, and maybe the imported tokeniser is not as good as the in-built one
+Researched how to use BERT to prepare the data: fully integrated into the code, but the performance was slightly worse than Logistic Regression before. I even used the full BERT instead of the light version - distilBERT. How come?
+Improved dataset cleaning according to tutorials (this might be the reason BERT did worse - information lost?)
+
+
+Week 6: 24/10/22 - 27/10/22
+
+• Started researching and importing the largest Twitter dataset (60 million posts), but realised that with AWS I'd have to pay to access that many posts and I did not want to associate my debit card with the project. Which is why I:
+• Researched for alternative Twitter datasets that would have enough posts as well
+• Found a dataset with about 600K politics-focused posts (as well as many celebrity-focused posts)
+    • The only drawback is that all of the posts are connected to news sources by links, but this can either be removed or included as part of the dissertation problem
+    • Have imported the Tweet IDs from the dataset (which was surprisingly difficult)
+• By researching more about Twitter datasets, I've found that it's against Twitter's Terms of Service to  share datasets with any of the features of the tweets, so the dataset includes only the IDs
+• Researched Twitter API and applied for Elevated Access to be able to query for up to 2 million posts per month (without it would be up to 500K, which is not the full extent of the dataset)
+    • With this API, I found out I can extract extremely useful features for the model on top of the text (creation date and time, user location, user follower count, friend count, user description, and verification status)
+• Have since acquired Elevated Access
+
+
+Week 7: 31/10/22 - 03/11/22
+
+Developed an initial way to acquire the aforementioned features from Tweets with the use of Twitter API
+With the realisation that this query would take 60+ hours for the full 600K Tweets, spent most of the time searching for another way to query Twitter with a different API, which I finished on Thursday
+Experimented with the first 200 hundred fake news Tweet IDs, initial results:
+* Only 60 out of those 200 were still on Twitter as the other Tweets' authors' accounts had been suspended/deleted (theory: this will be more prevalent in fake news Tweets than real news Tweets)
+* Seeing the user description and location has made me realise that this model could be seriously biased against people based on their political and religious beliefs and other factors (example description of a fake Tweet: "Patriotic Republican, son of Phila. PA Police Officer, Christian, Trump supporter.  #MAGA #TRUMP2020 #KAG"). Any initial research into how to avoid discrimination or discussion around it?
+Running the script overnight to get all 420K real news Tweets (170K fake news Tweets took about an hour)
+Attended a dissertation-writing advice class, have some questions about it (if applicable)
+
+
+Week 8: 07/11/22 - 13/11/22
+
+Experimented with the application of BERT to the bigger but limited (200K Tweet) dataset, but failed because it takes up too much memory to apply to the whole dataset at once. To-do: find out how to sequentially apply BERT to dataset in batches.
+
+Decided to run the same set of simple models on TF-IDF'd data (just the text of the Tweet for now) (took about an hour and a half), and got very confusing results because they are TOO good:
+Dummy most frequent: 52.0% (a dummy model getting 50% verifies that the dataset isn't too over-representative in either direction)
+Logistic Regression: 97.6%
+SVC: 98.0%
+I investigated the dataset to see why these metrics were literally incredible, and I've come up with a theory: because lots of these tweets contain exactly the same words (copy-pasted title of the linked article), they're easily associated with real/fake news, and a repeated Tweet in the testing data (even if it has different other characteristics) would have already been encountered in the training data. However, is the believable metric of the Dummy model maybe proof that this isn't the case?
+
+Finally, I finished running the Twitter API fetching script for real news to have full coverage of the dataset, getting 179K additional real news Tweets (on top of the ~120K first-got real news Tweets)
+
+
+Week 9: 14/11/22 - 20/11/22
+
+Combined the earlier-fetched part of real news Tweets with the later-fetched, finally getting all 296K Tweets together.
+
+Spent 5-6 hours just adding news article IDs to each Tweet because 1) the dataset is arranged in a really weird way and 2) the dataset of Tweets is huge (405K Tweets). Findings: the articles are quite well balanced between real and fake: there are 395 unique real news articles and 384 fake ones.
+
+Managed to run the models during the night on just the text with the grouped Tweets not spreading across both training and testing data, and here are the results:
+Dummy Most-Frequent: 68.3% (possible reasons: still haven't solved the imbalanced data, so true news is about 2/3, but this is a to-do; most-frequent terms are a good indicator of fakeness/realness)
+SVC: 70.1%
+Logistic Regression: 71.7%
+
+These seem like much more believable results and there is much room for growth by introducing more features into the pipeline and doing a better job of balancing the classes.
+
+Also, I wanted to discuss with you whether the current situation with Twitter will affect my project at all.
+
+
+Week 10: 21/11/22 - 27/11/22
+
+Fixed the imbalance in the dataset by randomly choosing as many real news tweets as there are fake news tweets. Here is the performance for the new models:
+Dummy most frequent: 49.5% (-18.8% since last time) (This 50/50 split is very promising for the seeming validity of the dataset)
+Logistic Regression: 68.0% (-3.7%) (surprisingly not much regression)
+SVC: 61.4% (-8.7%) (a much larger regression, but less than half of Dummy model's)
+
+
+Week 1 of Sem 2: 09/01/23 - 13/01/23
+
+•	Set up basic functionality of the Django website with a Bootstrap frontend
+•	Included the API necessary for the simpler (text-only) model to work, and it predicts text as intended (worse than the multi-feature model, naturally)
+•	Made my PythonAnywhere account ready for submitting the website code to put up live
+•	Figured out how to do time engineering by simplifying the date-time to a standardised time (with time zone differentiation)
+•	Noticed and fixed inappropriate indexing in the concatenated dataset that was happening before
+•	Decided to implement a text-only approach for multiple features which I include as part of sentences (e.g., “I am (not) verified.”), which is left to train
+
+
+Week 2 of Sem 2: 15/01/23 - 20/01/23
+
+Biggest problem first of all: I have tried multiple times to train the complex model on Google Colab and my personal laptop but:
+* Google Colab has limited resources of GPU use and continuous running of training (up to 90 minutes of inactivity and 12 hours of "active" running), but it kept disconnecting the runtime and deleting all files (which meant that I couldn't even save the weights midway through) and I have run out of those resources
+* CUDA is being extremely uncooperative and not allowing me to use it in Jupyter Notebook because of very complicated versioning between the different components: CUDA, cuDNN, pytorch, transformers package, exactly
+Because of this, I would really appreciate your help in using the university servers (if they have CUDA) to run the training of my model if possible. I really apologise if this is very late to ask.
+
+Secondly, what I've done apart from experimenting with and giving up on training the model: 
+* Finished the backend of the website with core page navigation and prediction using simple model
+* Got Twitter API to work and ready for using the feature for complex model
+
+Will showcase the things I've done in the meeting :)
+
+
+Week 3 of Sem 2: 21/01/23 - 26/01/23
+
+Finally trained the BERT model! Only took 24 hours...
+Got it done by figuring out that there was something wrong with virtual environments on my laptop, which, after fixing that, allowed me to finally install CUDA and run it on my laptop.
+First I tried the stlinux servers, but they didn't even have conda or pip in their system variables, so I thought it would be too much of a hassle to figure it out.
+That's the good news regarding the model. The not so good news: the model's F1 score is 0.986. Looking at validation loss, it visibly overfitted, and the high F1-score shows as much. But it's working at least!
+The better news is that I've improved the website, so that works, and tested out some fake news from PolitiFact, which also works (sometimes, and this I want to talk about). As well as that, I've written a page of the background. Will showcase everything tomorrow.
+I wanted to also discuss how much of my background should be a literature review and how much should be explanations about NLP, machine learning, fake news, etc, since a lot of dissertations from the so-called Hall of Fame (ones that got high A marks in previous years) focus more on explanations.
+
+
+Week 4 of Sem 2: 27/01/23 - 03/02/23
+
+Most of the work this week was spent towards the background section of my dissertation, which I hope will prove to be a good first draft, so I haven't done much in terms of model evaluation, but I have done some:
+Confusion matrix and accuracy (0.981) evaluation of the complex model, which I will share in the meeting. 
+I have also analysed a few phrase occurrences in the dataset, most of which seem fine (except for Bill Gates, as you correctly guessed). Trump (20%) and Clinton (3%) both got around the same percentage.
+One of the big problems that I wanted to discuss with you today was the fact that I found out that 11_708 out of 159_460 Tweets (7.34%) in my training dataset are not even in English when I had not used a multilingual BERT model. Would this be a big problem to quickly rectify or is this maybe something I could talk about in my dissertation as a point to improve?
+The other problem is that I've realised only now how many different versions of BERT there are (found in the sidebar on https://huggingface.co/docs/transformers/model_doc/bertweet), and I've used only the standard version of BERT without any other pre-fine-tuning. Is this a problem as well?
+
+
+Week 5 of Sem 2: 04/02/23 - 09/02/23
+
+Again, most of the work this week was spent towards the dissertation, this time I've completed first drafts of the Introduction and Requirements sections of the dissertation. I also included more detail about the transformer, let me know what you think!
+I also removed foreign languages from the dataset and re-ran the training of the model over Sunday while traveling to Edinburgh, which means that the model's performance on the dataset is even better now: F1 score of 0.994 and accuracy of 0.992.
+And the final thing I did was standardise the confusion matrix.
+
+
+Week 8 of Sem 2: 25/02/23 - 03/03/23
+
+As I said in the middle of the week, I've implemented all the changes we discussed in our last meeting: the misappropriated quote, the incorrect diagram, and the updated confusion matrix.
+Apart from that, I've finished a first draft of the dissertation, having finished my Implementation, Evaluation, and Conclusion, which comes up to just about 30 pages. I hope that maybe with your some of your feedback I can include more detail, which would increase the page count.
+
+
+Week 9 of Sem 2: 04/03/23 - 10/03/23
+
+This week has been very assessed exercise-heavy, which is why I haven't done everything I wanted for the dissertation/project.
+However, for the dissertation, I've fixed the bibliography lowercase letters, expanded the Conclusion (especially about over-fitting), and wrote the Abstract. I've attached the current state of the dissertation here.
+As for hosting, I've researched free options online, but I'm struggling to find a platform that can host the website with my space requirements not just because of the model weights, but also because of the libraries required. By removing PyTorch, I've successfully hosted the index page, but without the scikit-learn package (also a big one), the results page cannot be loaded. Here's the website:
+http://fakenewsuofg.pythonanywhere.com/

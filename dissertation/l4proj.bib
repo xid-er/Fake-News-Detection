@@ -1,46 +1,475 @@
-@inproceedings{Pey17,
-  author    = {Simon {Peyton Jones}},
-  title     = {How to Write a Great Research Paper},
-  booktitle = {2017 Imperial College Computing Student Workshop, {ICCSW} 2017, September
-               26-27, 2017, London, {UK}},
-  pages     = {1:1--1:1},
-  year      = {2017},    
+\usepackage{natbib}
+
+@Article{FakeNewsTrends,
+    AUTHOR = {de Oliveira, Nicollas R. and Pisa, Pedro S. and Lopez, Martin Andreoni and de Medeiros, Dianne Scherly V. and Mattos, Diogo M. F.},
+    TITLE = {{Identifying Fake News on Social Networks Based on Natural Language Processing: Trends and Challenges}},
+    JOURNAL = {Information},
+    VOLUME = {12},
+    YEAR = {2021},
+    NUMBER = {1},
+    ARTICLE-NUMBER = {38},
+    URL = {https://www.mdpi.com/2078-2489/12/1/38},
+    ISSN = {2078-2489},
+    DOI = {10.3390/info12010038}
+}
+
+ @misc{PolitiFact, 
+    title={{Politifact - the principles of the truth-O-meter: PolitiFact's methodology for independent fact-checking}}, 
+    url={https://www.politifact.com/article/2018/feb/12/principles-truth-o-meter-politifacts-methodology-i}, 
+    journal={@politifact}, 
+    author={Holan, Angie Drobnic}, 
+    year={2018}, 
+    month={Feb},
+    note = "[Accessed January 20th, 2023]"
+} 
+
+@article{
+    FakeNewsScience,
+    author = {David M. J. Lazer  and Matthew A. Baum  and Yochai Benkler  and Adam J. Berinsky  and Kelly M. Greenhill  and Filippo Menczer  and Miriam J. Metzger  and Brendan Nyhan  and Gordon Pennycook  and David Rothschild  and Michael Schudson  and Steven A. Sloman  and Cass R. Sunstein  and Emily A. Thorson  and Duncan J. Watts  and Jonathan L. Zittrain },
+    title = {The science of fake news},
+    journal = {Science},
+    volume = {359},
+    number = {6380},
+    pages = {1094-1096},
+    year = {2018},
+    doi = {10.1126/science.aao2998},
+    URL = {https://www.science.org/doi/abs/10.1126/science.aao2998},
+    eprint = {https://www.science.org/doi/pdf/10.1126/science.aao2998}
+}
+
+@inproceedings{Topic-AgnosticIdentification,
+    author = {Castelo, Sonia and Almeida, Thais and Elghafari, Anas and Santos, A\'{e}cio and Pham, Kien and Nakamura, Eduardo and Freire, Juliana},
+    title = {{A Topic-Agnostic Approach for Identifying Fake News Pages}},
+    year = {2019},
+    isbn = {9781450366755},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3308560.3316739},
+    doi = {10.1145/3308560.3316739},
+    booktitle = {Companion Proceedings of The 2019 World Wide Web Conference},
+    pages = {975–980},
+    numpages = {6},
+    keywords = {Fake News Detection, Classification, Online News, Misinformation},
+    location = {San Francisco, USA},
+    series = {WWW '19}
+}
+
+ @article{
+    ThaiModel, 
+    title={{Thai fake news detection based on information retrieval, Natural Language Processing and machine learning}}, 
+    volume={2}, 
+    url={https://link.springer.com/article/10.1007/s42979-021-00775-6}, 
+    DOI={10.1007/s42979-021-00775-6}, 
+    number={6}, 
+    journal={SN Computer Science}, 
+    author={Meesad, Phayung}, 
+    year={2021}
+}
+
+@misc{
+    BooksCorpus,
+    doi = {10.48550/ARXIV.1506.06724},
+    url = {https://arxiv.org/abs/1506.06724},
+    author = {Zhu, Yukun and Kiros, Ryan and Zemel, Richard and Salakhutdinov, Ruslan and Urtasun, Raquel and Torralba, Antonio and Fidler, Sanja},
+    keywords = {Computer Vision and Pattern Recognition (cs.CV), Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {{Aligning Books and Movies: Towards Story-like Visual Explanations by Watching Movies and Reading Books}},
+    publisher = {arXiv},
+    year = {2015},
+    copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@misc{
+    BERT,
+    doi = {10.48550/ARXIV.1810.04805},
+    url = {https://arxiv.org/abs/1810.04805},
+    author = {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+    keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {{BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding}},
+    publisher = {arXiv},
+    year = {2018},
+    copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+ @misc{
+    BERTGELU, 
+    title={{Activation function GELU in BERT}}, 
+    url={https://iq.opengenus.org/activation-function-in-bert/}, 
+    journal={OpenGenus IQ: Computing Expertise &amp; Legacy}, 
+    publisher={OpenGenus Foundation}, 
+    author={Buss, Jonathan}, 
+    year={2022}, 
+    month={Dec},
+    note = "[Accessed January 29th, 2023]"
+}
+
+ @misc{
+     MLTypes, 
+     Title={{3 types of Machine Learning You should know}}, 
+     url={https://www.coursera.org/articles/types-of-machine-learning}, 
+     journal={Coursera}, 
+     publisher={Coursera}, 
+     author={Coursera}, 
+     year={2022}, 
+     month={Sep},
+     urldate={2023-01-29},
+     note = "[Accessed January 29th, 2023]"
+ }
+
+@Inbook{
+    NLPIntro,
+    author="Deng, Li and Liu, Yang",
+    title={{"A Joint Introduction to Natural Language Processing and to Deep Learning"}},
+    bookTitle="Deep Learning in Natural Language Processing",
+    year="2018",
+    publisher="Springer Singapore",
+    address="Singapore",
+    pages="1--22",
+    isbn="978-981-10-5209-5",
+    doi="10.1007/978-981-10-5209-5\_1",
+    url="https://doi.org/10.1007/978-981-10-5209-5\_1"
+}
+
+@misc{
+    LogRegression, 
+    title={{Logistic Regression Explained}}, 
+    url={https://towardsdatascience.com/logistic-regression-explained-9ee73cede081}, 
+    journal={Medium}, 
+    publisher={Towards Data Science}, 
+    author={Thorn, James}, 
+    year={2020}, 
+    month={Feb},
+    urldate={2023-01-30},
+    note = "[Accessed January 30th, 2023]"
+} 
+
+@misc{
+    NLPTransformer,
+    doi = {10.48550/ARXIV.1706.03762},
+    url = {https://arxiv.org/abs/1706.03762},
+    author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
+    keywords = {Computation and Language (cs.CL), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {{Attention Is All You Need}},
+    publisher = {arXiv},
+    year = {2017},
+    copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@misc{
+    BERTExplained,
+    url={http://jalammar.github.io/illustrated-bert/},
+    author={Alammar, Jay},
+    title={{The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)}},
+    year={2018},
+    urldate={2023-01-31},
+    note = "[Accessed January 31st, 2023]"
+}
+
+@InProceedings{
+    MLApps,
+    author="Mathews, Sherin Mary", 
+    editor="Arai, Kohei and Bhatia, Rahul and Kapoor, Supriya",
+    title={{"Explainable Artificial Intelligence Applications in NLP, Biomedical, and Malware Classification: A Literature Review"}},
+    booktitle="Intelligent Computing",
+    year="2019",
+    publisher="Springer International Publishing",
+    address="Cham",
+    pages="1269--1292",
+    isbn="978-3-030-22868-2"
+}
+
+@article{
+    scikit-learn,
+    title={{Scikit-learn: Machine Learning in {P}ython}},
+    author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+    journal={Journal of Machine Learning Research},
+    volume={12},
+    pages={2825--2830},
+    year={2011}
+}
+
+ @misc{
+     FakeRealHelp, 
+     title={{How To Identify Fake News From Real News Online}}, url={https://www.searchenginejournal.com/fake-news-vs-real-news/459719}, 
+     journal={Search Engine Journal}, 
+     author={DiSilvestro, Amanda}, 
+     year={2022}, 
+     month={Aug},
+     day={23},
+     urldate={2023-02-04},
+     note = "[Accessed February 4th, 2023]"
+ }
+
+ @misc{
+    TwitterCovid,
+    title={{Twitter ends Covid misinformation policy under Musk}},
+    url={https://www.bbc.co.uk/news/technology-63796832},
+    journal={BBC},
+    author={Schrael, Rachel},
+    year={2022},
+    month={November},
+    day={30},
+    urldate={2023-02-04},
+    note = "[Accessed February 4th, 2023]"
+ }
+
+ @misc{
+    Twitter2FA,
+    title={{Twitter users with 2-factor authentication said they were locked out of their accounts soon after Elon Musk said he was ridding the site of 'bloatware'}},
+    url={https://www.businessinsider.com/elon-musk-twitter-users-two-factor-authentication-locked-out-accounts-2022-11},
+    author={Dean, Grace},
+    journal={Business Insider},
+    year={2022},
+    month={November},
+    day={15},
+    urldate={2023-02-04},
+    note = "[Accessed February 4th, 2023]"
+ }
+
+ @inproceedings{
+    EmojiSemantics,
+	doi = {10.18653/v1/d17-1169},
   
+	url = {https://doi.org/10.18653/v1/d17-1169},
+  
+	year = 2017,
+	publisher = {Association for Computational Linguistics},
+  
+	author = {Bjarke Felbo and Alan Mislove and Anders S{\o}gaard and Iyad Rahwan and Sune Lehmann},
+  
+	title = {{Using millions of emoji occurrences to learn any-domain
+		            representations for detecting sentiment, emotion and sarcasm}},
+  
+	booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural
+		          Language Processing}
 }
 
-@book{Wil09,
-  title={Style: the basics of clarity and grace},
-  author={Williams, Joseph M and Bizup, Joseph},
-  year={2009},
-  publisher={Pearson Longman}
+@misc{
+    TransformerExplained,
+    url={http://jalammar.github.io/illustrated-transformer/},
+    author={Alammar, Jay},
+    title={{The Illustrated Transformer}},
+    year={2020},
+    urldate={2023-02-09},
+    note = "[Accessed February 9th, 2023]"
 }
 
-@book{Pin15,
-  title={The sense of style: The thinking person's guide to writing in the 21st century},
-  author={Pinker, Steven},
-  year={2015},
-  publisher={Penguin Books}
+@misc{
+    NvidiaLogIn,
+    url={https://www.pcgamer.com/nvidias-email-verification-is-down-blocking-logins-to-geforce-now-and-geforce-experience/},
+    author={Ridley, Jacob},
+    title={{Nvidia's email verification service went down today, but is back now with some delays}},
+    year={2023},
+    month={January},
+    urldate={2023-02-12},
+    note = "[Accessed February 12th, 2023]"
 }
 
-@book{StrWhi07,
-  title={The Elements of style},
-  author={Strunk, William and Whyte, EB},
-  year={2007},
-  publisher={Penguin}
+@misc{
+    ClassImbalance,
+    url={https://elitedatascience.com/imbalanced-classes},
+    author={EliteDataScience.com},
+    title={{How to Handle Imbalanced Classes in Machine Learning}},
+    year=2022,
+    month={July},
+    day={6},
+    note = "[Accessed February 19th, 2023]"
 }
 
-@book{Von80,
-  title={How to write with style},
-  author={Vonnegut, Kurt},
-  year={1980},
-  publisher={International Paper Company}
+@misc{
+    BERTAllFeatures,
+    url={https://mccormickml.com/2021/06/29/combining-categorical-numerical-features-with-bert/},
+    author={McCormick, Chris},
+    title={{Combining Categorical and Numerical Features with Text in BERT}},
+    year=2021,
+    month={June},
+    day={29},
+    note = "[Accessed February 20th, 2023]"
 }
 
-@incollection{Orw68,
-  title={Politics and the {English} language},
-  author={Orwell, George},
-  booktitle={The collected essays, journalism and letters of George Orwell},
-  pages={127--140},
-  year={1968},
-  publisher={Harcourt, Brace, Javanovich}
+@misc{
+    GroupSplit,
+    url={https://stackoverflow.com/a/61337958/10197907},
+    author={yatu},
+    year={2020},
+    month={April},
+    day={21},
+    note = "[Accessed February 20th, 2023]"
+}
+
+@misc{
+    BatchSize,
+    url={https://pub.towardsai.net/what-is-the-effect-of-batch-size-on-model-learning-196414284add},
+    title={{What Is the Effect of Batch Size on Model Learning?}},
+    author={Varikuti, Mohit},
+    year={2022},
+    month={May},
+    day={1},
+    note = "[Accessed February 20th, 2023]"
+}
+
+@article{
+    PHEME,
+    doi = {10.1371/journal.pone.0150989},
+    author = {Zubiaga, Arkaitz AND Liakata, Maria AND Procter, Rob AND Wong Sak Hoi, Geraldine AND Tolmie, Peter},
+    journal = {PLOS ONE},
+    publisher = {Public Library of Science},
+    title = {{Analysing How People Orient to and Spread Rumours in Social Media by Looking at Conversational Threads}},
+    year = {2016},
+    month = {03},
+    volume = {11},
+    url = {https://doi.org/10.1371/journal.pone.0150989},
+    pages = {1-29},
+}
+
+@misc{
+    FakeNewsNet,
+    doi = {10.48550/ARXIV.1809.01286},
+    url = {https://arxiv.org/abs/1809.01286},
+    author = {Shu, Kai and Mahudeswaran, Deepak and Wang, Suhang and Lee, Dongwon and Liu, Huan},
+    keywords = {Social and Information Networks (cs.SI), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {{FakeNewsNet: A Data Repository with News Content, Social Context and Spatialtemporal Information for Studying Fake News on Social Media}},
+    publisher = {arXiv},
+    year = {2018},
+    copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@misc{
+    MultiModalBert,
+    author={McCormick, Chris},
+    title={{Mixing BERT with Categorical and Numerical Features}},
+    url={https://www.youtube.com/watch?v=NbbsVcs42jE},
+    year={2021},
+    month={August},
+    day={3},
+    note="[Accessed February 25th, 2023]"
+}
+
+@misc{
+    TweepyTutorial,
+    url={https://www.kirenz.com/post/2021-12-10-twitter-api-v2-tweepy-and-pandas-in-python/twitter-api-v2-tweepy-and-pandas-in-python/},
+    title={{Twitter API v2, tweepy and pandas in Python}},
+    author={Kirenz, Jan},
+    year={2022},
+    month={May},
+    day={19},
+    note="[Accessed February 26th, 2023]"
+}
+
+@misc{
+    GroupSplitVal,
+    url={https://stackoverflow.com/a/69029384/10197907},
+    author={julliet},
+    year={2021},
+    month={September},
+    day={2},
+    note="[Accessed February 26th, 2023]"
+}
+
+@misc{
+    PFBillGates,
+    url={https://www.politifact.com/factchecks/2021/nov/17/tweets/bill-gates-said-we-need-vaccines-halt-transmission/},
+    author={Putterman, Samantha},
+    title={{Bill Gates said we need vaccines that halt transmission. He didn’t say the COVID-19 shots don’t work}},
+    year={2021},
+    month={November},
+    day={17},
+    note="[Accessed February 26th, 2023]"
+}
+
+@misc{
+    TwitterAPIFree,
+    url={https://techcrunch.com/2023/02/01/twitter-to-end-free-access-to-its-api/},
+    author={Mehta, Ivan and Singh, Manish},
+    title={{Twitter to end free access to its API in Elon Musk’s latest monetization push}},
+    year={2023},
+    month={February},
+    day={2},
+    note="[Accessed February 26th, 2023]"
+}
+
+@misc{
+    BERTJapanese,
+    url={https://towardsdatascience.com/japanese-multiclass-text-classification-with-97-accuracy-using-bert-11b1fdc7c27e},
+    author={Koca, Danyel},
+    title={{Japanese multiclass text classification with 97\% accuracy using BERT}},
+    year={2021},
+    month={September},
+    day={20},
+    note="[Accessed February 26th, 2023]"
+}
+
+@misc{
+    BERTGradientCheck,
+    url={https://huggingface.co/docs/transformers/v4.18.0/en/performance\#gradient-checkpointing},
+    author={Hugging Face Documentation},
+    title={{Performance and Scalability: Gradient Checkpointing}},
+    note="[Accessed February 26th, 2023]"
+}
+
+@misc{
+    ColabFAQ,
+    url={https://research.google.com/colaboratory/faq.html\#resource-limits},
+    title={{Google Colaboratory Frequently Asked Questions}},
+    author={Google Colaboratory},
+    note="[Accessed February 26th, 2023]"
+}
+
+@misc{
+    AdamW,
+    url={https://towardsdatascience.com/why-adamw-matters-736223f31b5d},
+    author={Graetz, Fabio M.},
+    title={{Why AdamW matters}},
+    year={2018},
+    note="[Accessed February 27th, 2023]"
+}
+
+@InProceedings{
+    BigData,
+    doi={https://doi.org/10.1007/978-3-319-08976-8\_16},
+    author="Elgendy, Nada and Elragal, Ahmed",
+    editor="Perner, Petra",
+    title={{"Big Data Analytics: A Literature Review Paper"}},
+    booktitle="Advances in Data Mining. Applications and Theoretical Aspects",
+    year="2014",
+    publisher="Springer International Publishing",
+    address="Cham",
+    pages="214--227"
+}
+
+@misc{
+    ConfMatrixPct,
+    url={https://gist.github.com/mesquita/f6beffcc2579c6f3a97c9d93e278a9f1},
+    author={Mesquita, Vinicius},
+    title={{Nice Confusion Matrix with percentage cbar}},
+    year={2020},
+    note="[Accessed February 28th, 2023]"
+}
+
+@misc{
+    BERTGELUFigure,
+    url={https://iq.opengenus.org/activation-function-in-bert/},
+    author={Buss, Jonathan},
+    title={{Activation function GELU in BERT}},
+    note="[Accessed March 14th, 2023]"
+}
+
+@misc{
+    LRSigmoid,
+    url={https://en.wikipedia.org/wiki/Sigmoid\_function\#/media/File:Logistic-curve.svg},
+    title={The logistic curve},
+    author={Qef},
+    year={2008},
+    note="[Accessed March 16th, 2023]"
+}
+
+@misc{
+    TwitterCharLimit,
+    url={https://www.forbes.com/sites/nicholasreimann/2023/02/08/twitter-boosts-character-limit-to-4000-for-twitter-blue-subscribers/?sh=791be5aa5ab8},
+    title={{Twitter Boosts Character Limit To 4,000 For Twitter Blue Subscribers}},
+    author={Reimann, Nicholas},
+    year={2023},
+    note="[Accessed March 22nd, 2023]"
 }

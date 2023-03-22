@@ -12,7 +12,7 @@
 2009/09/16 Modified by Tim Storer <tws@dcs.gla.ac.uk> to support non pdf modes.%
 2011/02/15 Modified by Gregg Hamilton <hamiltgr@dcs.gla.ac.uk> for use in final year projects.%
 2012/10/18 Modified by Patrick Prosser, use geometry to control margins, simplified.%
-2018/09/14 Modified by John Williamson, improve typographic appearance%
+2018/09/14 Modified by John H. Williamson, improve typographic appearance%
 ]
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 
@@ -45,11 +45,13 @@
 
 \usepackage{microtype} % improve typography
 \usepackage{anyfontsize} % allow any size of font
-\usepackage{amsmath,amsfonts,amsbsy,amssymb}
+\usepackage{amsmath,amsfonts,amsbsy}%,amssymb} (commented out to avoid error)
 \usepackage[style]{abstract} % abstract styling
 
 % set bibliography styling
 \usepackage{natbib}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
 \bibpunct{(}{)}{;}{a}{}{;}
 
 
@@ -57,13 +59,14 @@
 \usepackage[compact]{titlesec} % section heading formatting
 \usepackage{color} % colors
 \usepackage[table,svgnames]{xcolor}
-\usepackage{parskip} % adjustable line spacing
 \usepackage{listings} % nice code listings
 
 % remove dots from ToC
 \usepackage[titles]{tocloft} 
 \renewcommand{\cftdot}{}
 \usepackage[nottoc]{tocbibind}
+
+\usepackage{parskip} % adjustable line spacing (moved to after tocloft to avoid warning)
 
 % from: https://gist.github.com/FelipeCortez/10729134
 % set up listings for prettier output
@@ -74,6 +77,21 @@
 \definecolor{subtlegray}{rgb}{0.98, 0.98, 0.98}
 \usepackage{lstautogobble}
 \usepackage{listings}
+%define Javascript language
+\lstdefinelanguage{JavaScript}{
+    keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+    keywordstyle=\color{blue}\bfseries,
+    ndkeywords={class, export, boolean, throw, implements, import, this},
+    ndkeywordstyle=\color{darkgray}\bfseries,
+    identifierstyle=\color{black},
+    sensitive=false,
+    comment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    commentstyle=\color{purple}\ttfamily,
+    stringstyle=\color{red}\ttfamily,
+    morestring=[b]',
+    morestring=[b]"
+}
 \lstset{
     autogobble,    
     columns=fullflexible,
@@ -225,9 +243,7 @@ textfont=it,tableposition=above]{caption}
           \chapter*{Education Use Consent}
 
           I hereby grant my permission for this project to be stored, distributed and shown to other
-          University of Glasgow students and staff for educational purposes. 
-          \textbf{Please note that you are under no obligation to sign 
-          this declaration, but doing so would help future students.}
+          University of Glasgow students and staff for educational purposes.
 
           \begin{tabular}{@{}llll}
                 &                     &            &                     \\
