@@ -481,4 +481,5 @@
 ## Week 28 (Sem 2 Week 11)
 
 * *1 hour* Getting confusion matrix for LR, new metrics: 82.8% accuracy, 82.6% F1 score
-* *0.5 + 15:10 - 
+* *2 hours* Fixing errors in dissertation, adding READMEs, starting presentation
+* *0.5 + 19:00 - 
