@@ -465,3 +465,20 @@
 
 * *1 hour* Hosting website
 * *0.5 hours* Supervisor Meeting
+
+
+## Week 27 (Sem 2 Week 10)
+
+### 14 Mar 2023
+
+* *0.5 hours* Adding DummyMostFrequent metrics to diss
+
+### 16 Mar 2023
+
+* *0.5 hours* Adding Sigmoid function to diss
+
+
+## Week 28 (Sem 2 Week 11)
+
+* *1 hour* Getting confusion matrix for LR, new metrics: 82.8% accuracy, 82.6% F1 score
+* *0.5 + 15:10 - 
