@@ -1,5 +1,8 @@
 # Fake-News-Detection
 
+The presentation of the video can be accessed from here: https://mega.nz/file/Nq5ESL7L#nVj0fKLeQ5_RMyjmXFRYid3-6WJe8LQL43cGzWzqxnI.
+Other files can also be accessed from GitHub: https://github.com/xid-er/Fake-News-Detection.
+
 To see and use the product immediately, visit http://fakenewsuofg.pythonanywhere.com/. However, this production version is limited because of limited storage available on PythonAnywhere and other hosting platforms. Specifically, the more complex BERT model is not available on the live site, and trying to access it will show a warning message on the website. 
 
 The file structure is as follows:
@@ -16,8 +19,6 @@ To get the full feature set, follow the instructions below:
 
 ## Instructions
 
-**You must** include the instructions necessary to build and deploy this project successfully. If appropriate, also include 
-instructions to run automated tests. 
 
 ### Requirements
 
